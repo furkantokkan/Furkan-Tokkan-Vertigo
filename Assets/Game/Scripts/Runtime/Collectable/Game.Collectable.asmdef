@@ -1,0 +1,16 @@
+{
+    "name": "Game.Collectable",
+    "rootNamespace": "Game.Collectable",
+    "references": [
+        "GUID:ff99040181a1167409db68d7ab6e0494"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

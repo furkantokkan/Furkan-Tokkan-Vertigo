@@ -1,0 +1,17 @@
+{
+    "name": "Game.Boxes",
+    "rootNamespace": "Game.Boxes",
+    "references": [
+        "GUID:ff99040181a1167409db68d7ab6e0494",
+        "GUID:7b887e0fe06f1254e91e67f2b471175f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
