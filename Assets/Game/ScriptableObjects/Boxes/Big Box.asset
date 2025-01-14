@@ -1,0 +1,2649 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9197657840112211141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 48
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 48
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.893617
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot2:
+      weight: 11.702127
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 21.276596
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot4:
+      weight: 12.765958
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot5:
+      weight: 14.893617
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot6:
+      weight: 24.468084
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+--- !u!114 &-9139531181016095066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 50
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 50
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 8.695652
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot2:
+      weight: 21.73913
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 12.318841
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot4:
+      weight: 21.73913
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot5:
+      weight: 18.115942
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot6:
+      weight: 17.391304
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+--- !u!114 &-9096830146879827052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 3
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 3
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 17.213116
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot2:
+      weight: 11.4754095
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot3:
+      weight: 15.5737705
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot4:
+      weight: 16.393442
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot5:
+      weight: 23.770493
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot6:
+      weight: 15.5737705
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+--- !u!114 &-8553517125149597747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 36
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 36
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.049587
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot2:
+      weight: 17.355371
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 23.966942
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot4:
+      weight: 19.008265
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot5:
+      weight: 14.876033
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot6:
+      weight: 10.743802
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+--- !u!114 &-8241168229105642386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 2
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 2
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 13.223141
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot2:
+      weight: 13.223141
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot3:
+      weight: 20.661158
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot4:
+      weight: 19.008265
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot5:
+      weight: 9.090909
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 24.793388
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+--- !u!114 &-8195461969423946803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 60
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 60
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 13.432836
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot2:
+      weight: 19.402985
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot3:
+      weight: 20.895523
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot4:
+      weight: 8.208955
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot5:
+      weight: 15.671641
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot6:
+      weight: 22.38806
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+--- !u!114 &-8156880859265917970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 20
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 20
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 25.423729
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 11.016949
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 19.491526
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot4:
+      weight: 9.322034
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot5:
+      weight: 11.864407
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot6:
+      weight: 22.881355
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+--- !u!114 &-7833112042361759074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 29
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 29
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.615385
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot2:
+      weight: 16.153847
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 13.076923
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot4:
+      weight: 22.307692
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot5:
+      weight: 18.461538
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot6:
+      weight: 15.384615
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+--- !u!114 &-7332780385206452379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 9
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 9
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 15.625
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 20.833334
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot3:
+      weight: 13.541667
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot4:
+      weight: 18.75
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot5:
+      weight: 14.583333
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot6:
+      weight: 16.666666
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+--- !u!114 &-6721541840769486608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 44
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 44
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 26.548672
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 8.849558
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot3:
+      weight: 15.929204
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot4:
+      weight: 17.699116
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 15.929204
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 15.044248
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+--- !u!114 &-6550750927465144002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 22
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 22
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 16.161615
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 13.131313
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot3:
+      weight: 12.121212
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot4:
+      weight: 19.19192
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot5:
+      weight: 23.232323
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 16.161615
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+--- !u!114 &-6514377732276821881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 28
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 28
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.814815
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 13.888889
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot3:
+      weight: 19.444445
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot4:
+      weight: 15.740741
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot5:
+      weight: 20.37037
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot6:
+      weight: 15.740741
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &-6229973247140386717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 42
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 42
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 22.727272
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 16.363636
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot3:
+      weight: 12.727273
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot4:
+      weight: 26.363636
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot5:
+      weight: 11.818182
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot6:
+      weight: 10
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+--- !u!114 &-5888823507394442996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 30
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 30
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 10.185185
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot2:
+      weight: 17.592592
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot3:
+      weight: 23.148148
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot4:
+      weight: 21.296297
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot5:
+      weight: 18.518518
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot6:
+      weight: 9.259259
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+--- !u!114 &-5840478178658430849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 51
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 51
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 20.979021
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot2:
+      weight: 14.685315
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot3:
+      weight: 19.58042
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot4:
+      weight: 16.783216
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 18.881119
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot6:
+      weight: 9.090909
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &-5678297933791492444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 31
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 31
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 17.886179
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 17.886179
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot3:
+      weight: 22.764227
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot4:
+      weight: 8.130081
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot5:
+      weight: 12.195122
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot6:
+      weight: 21.138212
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+--- !u!114 &-5367474110607479124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 45
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 45
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 13.432836
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot2:
+      weight: 18.656717
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot3:
+      weight: 17.910448
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot4:
+      weight: 17.910448
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot5:
+      weight: 11.940298
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot6:
+      weight: 20.149254
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+--- !u!114 &-4300960629620786133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 8
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 8
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 19
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot2:
+      weight: 11
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot3:
+      weight: 13
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot4:
+      weight: 19
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 12
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 26
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+--- !u!114 &-4184059065327679193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 10
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 10
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 17.6
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 8
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot3:
+      weight: 19.2
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot4:
+      weight: 22.4
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 12
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot6:
+      weight: 20.8
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+--- !u!114 &-4090425537451173546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 16
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 16
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 15.853659
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot2:
+      weight: 14.634147
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot3:
+      weight: 13.414634
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot4:
+      weight: 12.195122
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot5:
+      weight: 25.609756
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 18.292683
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+--- !u!114 &-3975997186807866206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 39
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 39
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 22.857143
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot2:
+      weight: 23.809525
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 13.333333
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot4:
+      weight: 19.047619
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot5:
+      weight: 11.428572
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot6:
+      weight: 9.523809
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+--- !u!114 &-3966682040279933802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 32
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 32
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 28.735632
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot2:
+      weight: 11.494253
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 11.494253
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot4:
+      weight: 13.793103
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot5:
+      weight: 18.390804
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot6:
+      weight: 16.091953
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+--- !u!114 &-3875099041066694079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 35
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 35
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.583333
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot2:
+      weight: 23.958334
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot3:
+      weight: 12.5
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot4:
+      weight: 17.708334
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot5:
+      weight: 10.416667
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot6:
+      weight: 20.833334
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+--- !u!114 &-2649381180278278525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 54
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 54
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 17.692308
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot2:
+      weight: 19.23077
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot3:
+      weight: 18.461538
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot4:
+      weight: 10.769231
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot5:
+      weight: 13.846154
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot6:
+      weight: 20
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+--- !u!114 &-2333662377672822538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 37
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 37
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 21.167883
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot2:
+      weight: 15.328467
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot3:
+      weight: 13.868613
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 19.708029
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot5:
+      weight: 20.437956
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot6:
+      weight: 9.489051
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+--- !u!114 &-1390517228209457903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 46
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 46
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 22.727272
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot2:
+      weight: 9.090909
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 10
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 23.636364
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot5:
+      weight: 19.09091
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot6:
+      weight: 15.454545
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+--- !u!114 &-1379146057594102895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 24
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 24
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 23.255814
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot2:
+      weight: 19.379845
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 7.751938
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot4:
+      weight: 16.27907
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot5:
+      weight: 23.255814
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot6:
+      weight: 10.077519
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+--- !u!114 &-460008272685546801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 11
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 11
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.705882
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot2:
+      weight: 19.117647
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 11.764706
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot4:
+      weight: 19.117647
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot5:
+      weight: 19.117647
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot6:
+      weight: 16.17647
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &-426894067863616238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 18
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 18
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 11.029411
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 22.058823
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot3:
+      weight: 13.970589
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot4:
+      weight: 21.32353
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 10.294118
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot6:
+      weight: 21.32353
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+--- !u!114 &-409237613860489438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 55
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 55
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 12.711864
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 15.254237
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot3:
+      weight: 9.322034
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot4:
+      weight: 17.79661
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot5:
+      weight: 19.491526
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot6:
+      weight: 25.423729
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d6b1b14ba5a2c458c0c6e844c8c76c, type: 3}
+  m_Name: Big Box
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: editorExtension
+      Entry: 7
+      Data: 0|Game.Boxes.Editor.BoxEditorExtension, Game.Boxes
+    - Name: normalWaveRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: safeWaveRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 4
+      Data: 150
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: superWaveRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 50
+    - Name: 
+      Entry: 4
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  boxSprite: {fileID: 0}
+  boxName: Big Box
+  description: 
+  contents:
+  - {fileID: 2373037477944687343}
+  - {fileID: -8241168229105642386}
+  - {fileID: -9096830146879827052}
+  - {fileID: 3221040521823436421}
+  - {fileID: 2896757131473145210}
+  - {fileID: 5282981811365997363}
+  - {fileID: 6327703458723974362}
+  - {fileID: -4300960629620786133}
+  - {fileID: -7332780385206452379}
+  - {fileID: -4184059065327679193}
+  - {fileID: -460008272685546801}
+  - {fileID: 2528640687049871740}
+  - {fileID: 8284811352631762268}
+  - {fileID: 4816668386336210133}
+  - {fileID: 6454379637492628539}
+  - {fileID: -4090425537451173546}
+  - {fileID: 4107166655151687125}
+  - {fileID: -426894067863616238}
+  - {fileID: 7658318324853186328}
+  - {fileID: -8156880859265917970}
+  - {fileID: 2305921696734564676}
+  - {fileID: -6550750927465144002}
+  - {fileID: 2952241268508187554}
+  - {fileID: -1379146057594102895}
+  - {fileID: 8489148279367847954}
+  - {fileID: 1980766314192091609}
+  - {fileID: 7868106345085893608}
+  - {fileID: -6514377732276821881}
+  - {fileID: -7833112042361759074}
+  - {fileID: -5888823507394442996}
+  - {fileID: -5678297933791492444}
+  - {fileID: -3966682040279933802}
+  - {fileID: 3612520170094002107}
+  - {fileID: 7755089041818731468}
+  - {fileID: -3875099041066694079}
+  - {fileID: -8553517125149597747}
+  - {fileID: -2333662377672822538}
+  - {fileID: 1278723327156886422}
+  - {fileID: -3975997186807866206}
+  - {fileID: 2575098279783181657}
+  - {fileID: 2024194913289791902}
+  - {fileID: -6229973247140386717}
+  - {fileID: 5655596558144262128}
+  - {fileID: -6721541840769486608}
+  - {fileID: -5367474110607479124}
+  - {fileID: -1390517228209457903}
+  - {fileID: 5604478274255892286}
+  - {fileID: -9197657840112211141}
+  - {fileID: 4533266807924020856}
+  - {fileID: -9139531181016095066}
+  - {fileID: -5840478178658430849}
+  - {fileID: 5333790378171499544}
+  - {fileID: 5564176455933870712}
+  - {fileID: -2649381180278278525}
+  - {fileID: -409237613860489438}
+  - {fileID: 887831070474875317}
+  - {fileID: 1555821029751207351}
+  - {fileID: 5852183113038799414}
+  - {fileID: 8355961824765056373}
+  - {fileID: -8195461969423946803}
+--- !u!114 &887831070474875317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 56
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 56
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 16.27907
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot2:
+      weight: 11.627907
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 11.627907
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 20.155039
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 23.255814
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot6:
+      weight: 17.054264
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+--- !u!114 &1278723327156886422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 38
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 38
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 18.487394
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 11.764706
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot3:
+      weight: 21.84874
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 19.32773
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot5:
+      weight: 10.92437
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot6:
+      weight: 17.647058
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+--- !u!114 &1555821029751207351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 57
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 57
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 21.875
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot2:
+      weight: 10.416667
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot3:
+      weight: 14.583333
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot4:
+      weight: 23.958334
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 12.5
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot6:
+      weight: 16.666666
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+--- !u!114 &1980766314192091609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 26
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 26
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 17.355371
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot2:
+      weight: 13.223141
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot3:
+      weight: 17.355371
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot4:
+      weight: 17.355371
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot5:
+      weight: 16.528925
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot6:
+      weight: 18.181818
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+--- !u!114 &2024194913289791902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 41
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 41
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 13.207547
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot2:
+      weight: 27.35849
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 14.150944
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot4:
+      weight: 13.207547
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot5:
+      weight: 11.320755
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot6:
+      weight: 20.754717
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+--- !u!114 &2305921696734564676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 21
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 21
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 15.740741
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot2:
+      weight: 25
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot3:
+      weight: 24.074074
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot4:
+      weight: 12.037037
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot5:
+      weight: 12.962963
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 10.185185
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+--- !u!114 &2373037477944687343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 1
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 1
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 7.9365077
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot2:
+      weight: 22.222221
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 21.428572
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot4:
+      weight: 20.63492
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 12.698413
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot6:
+      weight: 15.079365
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+--- !u!114 &2528640687049871740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 12
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 12
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 16.528925
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 17.355371
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot3:
+      weight: 19.834711
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot4:
+      weight: 13.223141
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot5:
+      weight: 18.181818
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot6:
+      weight: 14.876033
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &2575098279783181657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 40
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 40
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 19.708029
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot2:
+      weight: 14.59854
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot3:
+      weight: 20.437956
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot4:
+      weight: 16.78832
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot5:
+      weight: 18.248175
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot6:
+      weight: 10.218978
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+--- !u!114 &2896757131473145210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 5
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 5
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 10.810811
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot2:
+      weight: 18.918919
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot3:
+      weight: 24.324324
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot4:
+      weight: 11.711712
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot5:
+      weight: 23.423424
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot6:
+      weight: 10.810811
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+--- !u!114 &2952241268508187554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 23
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 23
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 20.560747
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot2:
+      weight: 25.233644
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot3:
+      weight: 11.214953
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot4:
+      weight: 17.75701
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 13.084112
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 12.149532
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &3221040521823436421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 4
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 4
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 10.084034
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot2:
+      weight: 17.647058
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 23.529411
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot4:
+      weight: 17.647058
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot5:
+      weight: 8.403361
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot6:
+      weight: 22.689075
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+--- !u!114 &3612520170094002107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 33
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 33
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 20.20202
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot2:
+      weight: 14.141414
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot3:
+      weight: 14.141414
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot4:
+      weight: 23.232323
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 18.181818
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot6:
+      weight: 10.10101
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+--- !u!114 &4107166655151687125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 17
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 17
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 24.193548
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot2:
+      weight: 12.096774
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 11.290322
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot4:
+      weight: 18.548388
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot5:
+      weight: 19.35484
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot6:
+      weight: 14.5161295
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+--- !u!114 &4533266807924020856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 49
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 49
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 15.172414
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 13.103448
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot3:
+      weight: 19.310345
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot4:
+      weight: 18.62069
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot5:
+      weight: 20
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot6:
+      weight: 13.793103
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+--- !u!114 &4816668386336210133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 14
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 14
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 23.68421
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot2:
+      weight: 12.280702
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot3:
+      weight: 11.403509
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot4:
+      weight: 16.666666
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot5:
+      weight: 9.649123
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 26.31579
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+--- !u!114 &5282981811365997363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 6
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 6
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 20.76923
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot2:
+      weight: 16.153847
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot3:
+      weight: 18.461538
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot4:
+      weight: 9.230769
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 13.076923
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot6:
+      weight: 22.307692
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+--- !u!114 &5333790378171499544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 52
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 52
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.166667
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+    slot2:
+      weight: 15
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 12.5
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 20
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot5:
+      weight: 25
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot6:
+      weight: 13.333333
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+--- !u!114 &5564176455933870712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 53
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 53
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 18.62069
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot2:
+      weight: 12.413794
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot3:
+      weight: 10.344828
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot4:
+      weight: 18.62069
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 20.689655
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+    slot6:
+      weight: 19.310345
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+--- !u!114 &5604478274255892286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 47
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 47
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 17.213116
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot2:
+      weight: 9.836065
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 10.655738
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 21.311476
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot5:
+      weight: 17.213116
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot6:
+      weight: 23.770493
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+--- !u!114 &5655596558144262128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 43
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 43
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 8.870968
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot2:
+      weight: 14.5161295
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot3:
+      weight: 23.387096
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+    slot4:
+      weight: 8.870968
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+    slot5:
+      weight: 24.193548
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 20.161291
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+--- !u!114 &5852183113038799414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 58
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 58
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 15.652174
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot2:
+      weight: 8.695652
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot3:
+      weight: 26.086956
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot4:
+      weight: 15.652174
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot5:
+      weight: 12.173913
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot6:
+      weight: 21.73913
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+--- !u!114 &6327703458723974362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 7
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 7
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 20.143885
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot2:
+      weight: 20.86331
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot3:
+      weight: 16.546762
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot4:
+      weight: 14.388489
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot5:
+      weight: 17.985611
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot6:
+      weight: 10.071942
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+--- !u!114 &6454379637492628539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 15
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 15
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 13.571428
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot2:
+      weight: 20.714285
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot3:
+      weight: 15.714286
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot4:
+      weight: 17.857143
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot5:
+      weight: 17.142857
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot6:
+      weight: 15
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &7658318324853186328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 19
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 19
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 18.446602
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot2:
+      weight: 13.592233
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot3:
+      weight: 11.650485
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+    slot4:
+      weight: 13.592233
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot5:
+      weight: 28.15534
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot6:
+      weight: 14.563107
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+--- !u!114 &7755089041818731468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 34
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 34
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 20.661158
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+    slot2:
+      weight: 24.793388
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+    slot3:
+      weight: 12.396694
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 13.223141
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot5:
+      weight: 14.049587
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot6:
+      weight: 14.876033
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+--- !u!114 &7868106345085893608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 27
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 27
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 15
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+    slot2:
+      weight: 24.166666
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot3:
+      weight: 15.833333
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+    slot4:
+      weight: 16.666666
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot5:
+      weight: 10.833333
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+    slot6:
+      weight: 17.5
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+--- !u!114 &8284811352631762268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 13
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 13
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 14.503817
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot2:
+      weight: 17.557251
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot3:
+      weight: 22.900763
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+    slot4:
+      weight: 12.977099
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+    slot5:
+      weight: 9.160305
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot6:
+      weight: 22.900763
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+--- !u!114 &8355961824765056373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 59
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 59
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 22.137405
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+    slot2:
+      weight: 9.923664
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot3:
+      weight: 16.793894
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+    slot4:
+      weight: 16.793894
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+    slot5:
+      weight: 22.137405
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot6:
+      weight: 12.21374
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+--- !u!114 &8489148279367847954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Big Box Content 25
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Big Box Content 25
+  description: 
+  BoxContentItems:
+    slot1:
+      weight: 19.736841
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+    slot2:
+      weight: 19.078947
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot3:
+      weight: 17.763159
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+    slot4:
+      weight: 11.842105
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+    slot5:
+      weight: 11.842105
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+    slot6:
+      weight: 19.736841
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}

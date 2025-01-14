@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921c72c413faca04680a98bd3fca44d9, type: 3}
+  m_Name: Tier3 Sniper
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  ItemName: Tier3 Sniper
+  ItemSprite: {fileID: 21300000, guid: 128192641d990b641a7cb5ba1d0f56ae, type: 3}
+  itemType: 15
+  rewardsToGive:
+  - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
