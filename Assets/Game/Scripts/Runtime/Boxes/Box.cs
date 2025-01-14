@@ -40,6 +40,24 @@ namespace Game.Boxes
         [Title("Super")]
         public Sprite superWheel;
 
+        [BoxGroup("Indicator Types")]
+        [HorizontalGroup("Indicator Types/Row", Width = 75, MarginRight = 5)]
+        [PreviewField(75)]
+        [Title("Default")]
+        public Sprite defaultIndicator;
+
+        [BoxGroup("Indicator Types")]
+        [HorizontalGroup("Indicator Types/Row", Width = 75, MarginRight = 5)]
+        [PreviewField(75)]
+        [Title("Safe")]
+        public Sprite safeIndicator;
+
+        [BoxGroup("Indicator Types")]
+        [HorizontalGroup("Indicator Types/Row", Width = 75)]
+        [PreviewField(75)]
+        [Title("Super")]
+        public Sprite superIndicator;
+
         [BoxGroup("Box Information")]
         [Title("Box Details")]
         [NameCheck(typeof(Box))]
