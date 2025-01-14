@@ -1,0 +1,20 @@
+{
+    "name": "Validators",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0f134aa0394e0a546ac5792600039755",
+        "GUID:2de4d740cd0d77d4ab360159c392cb1d",
+        "GUID:7b887e0fe06f1254e91e67f2b471175f",
+        "GUID:32bdd5fbbb6a50c46ab9b377c0b911f6",
+        "GUID:ff99040181a1167409db68d7ab6e0494"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
