@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Whell Atlas
+  m_Name: Rewards & Items & Wheels Atlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -20,22 +20,34 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 1
-      enableTightPacking: 1
+      enableTightPacking: 0
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: 6cc80b9bd2a8e19419a698448be0d5b8, type: 3}
     - {fileID: 102900000, guid: 86fa1e09b2ca6cd4c9cf01edb6ffd593, type: 3}
-    - {fileID: 102900000, guid: 2a45f68703500c34dbe8fd4e9238a160, type: 3}
+    - {fileID: 102900000, guid: 6cc80b9bd2a8e19419a698448be0d5b8, type: 3}
     - {fileID: 102900000, guid: bf50c9ebe2f66394da7b9d5f137b2322, type: 3}
+    - {fileID: 102900000, guid: 2a45f68703500c34dbe8fd4e9238a160, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -66,7 +78,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a51cd7c88e6632644931d5a452824d00, type: 3}
   - {fileID: 21300000, guid: 222b0ac8627f1374aaa7f9c3235cfd24, type: 3}
   - {fileID: 21300000, guid: 0211dd19db6674848b9698a5f13da132, type: 3}
-  - {fileID: 21300000, guid: e63716697765b8c4b80278c7e2255c1c, type: 3}
   - {fileID: 21300000, guid: efba17b91cde1324aba0ca8849f90f24, type: 3}
   - {fileID: 21300000, guid: e1fa50f9f3e00ad4fba60ec875bbd6af, type: 3}
   - {fileID: 21300000, guid: c7efa5f9149857641925848fec93602b, type: 3}
@@ -102,7 +113,6 @@ SpriteAtlas:
   - UI_Icons_Armor_Points
   - ui_spin_bronze_base
   - UI_Icons_Vest_Points
-  - UI_Icons_Pistol_Points_
   - ui_icon_baseball_cap_easter
   - ui_icon_render_cons_healthshot_2_neurostim
   - ui_icon_render_t_cons_molotov
@@ -113,5 +123,5 @@ SpriteAtlas:
   - ui_spin_silver_base
   - ui_spin_golden_base
   m_RenderDataMap: {}
-  m_Tag: Whell Atlas
+  m_Tag: Rewards & Items & Wheels Atlas
   m_IsVariant: 0

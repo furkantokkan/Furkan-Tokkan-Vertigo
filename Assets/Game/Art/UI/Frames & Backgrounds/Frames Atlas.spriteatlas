@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Frames Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: fc87a66b34736124ba1d3262a40f852b, type: 3}
+    - {fileID: 2800000, guid: 9213833c2627b4c4c958700080918cf0, type: 3}
+    - {fileID: 2800000, guid: af3b63b7d7861614cb00e9e5b14e0da1, type: 3}
+    - {fileID: 2800000, guid: 56e47204f06a2124c9065a375f6eb791, type: 3}
+    - {fileID: 2800000, guid: ebbb430bfa180cd4f83c30ac0b55a6c2, type: 3}
+    - {fileID: 2800000, guid: 26054b63ccc96e24db15b3d428889655, type: 3}
+    - {fileID: 2800000, guid: 806c5d523579cba46949e96145ade07e, type: 3}
+    - {fileID: 2800000, guid: 7b3d252f03c7c784a878a52d301d167d, type: 3}
+    - {fileID: 2800000, guid: 45979eb2815421b4881718b52c092ede, type: 3}
+    - {fileID: 2800000, guid: 4f4a606de66260647965eac0f8c86bfd, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 806c5d523579cba46949e96145ade07e, type: 3}
+  - {fileID: 21300000, guid: 45979eb2815421b4881718b52c092ede, type: 3}
+  - {fileID: 21300000, guid: 26054b63ccc96e24db15b3d428889655, type: 3}
+  - {fileID: 21300000, guid: 56e47204f06a2124c9065a375f6eb791, type: 3}
+  - {fileID: 21300000, guid: af3b63b7d7861614cb00e9e5b14e0da1, type: 3}
+  - {fileID: 21300000, guid: ebbb430bfa180cd4f83c30ac0b55a6c2, type: 3}
+  - {fileID: 21300000, guid: fc87a66b34736124ba1d3262a40f852b, type: 3}
+  - {fileID: 21300000, guid: 9213833c2627b4c4c958700080918cf0, type: 3}
+  - {fileID: 21300000, guid: 4f4a606de66260647965eac0f8c86bfd, type: 3}
+  - {fileID: 21300000, guid: 7b3d252f03c7c784a878a52d301d167d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ui_card_panel_zone_current_white
+  - ui_card_panel_zone_white
+  - ui_card_panel_zone_current
+  - ui_card_panel_zone_bg
+  - ui_card_frame_gardient
+  - ui_card_panel_zone_coming
+  - ui_card_frame_4px_zone
+  - ui_card_frame_12px_neutral
+  - ui_card_zone_map_frame
+  - ui_card_panel_zone_super
+  m_RenderDataMap: {}
+  m_Tag: Frames Atlas
+  m_IsVariant: 0
