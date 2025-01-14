@@ -10,19 +10,42 @@ namespace Game.Boxes
 {
     public class Box : SerializedScriptableObject
     {
-        [HorizontalGroup("Box Settings", Width = 75)]
+        [BoxGroup("Box Visuals")]
+        [HorizontalGroup("Box Visuals/Row", Width = 75, MarginRight = 5)]
         [PreviewField(75)]
-        [HideLabel]
+        [Title("Box Sprite")]
         public Sprite boxSprite;
 
-        [HorizontalGroup("Box Settings")]
-        [VerticalGroup("Box Settings/Details")]
+        [BoxGroup("Box Visuals")]
+        [HorizontalGroup("Box Visuals/Row", Width = 75)]
+        [PreviewField(75)]
+        [Title("Background")]
+        public Sprite background;
+
+        [BoxGroup("Wheel Types")]
+        [HorizontalGroup("Wheel Types/Row", Width = 75, MarginRight = 5)]
+        [PreviewField(75)]
+        [Title("Default")]
+        public Sprite defaultWheel;
+
+        [BoxGroup("Wheel Types")]
+        [HorizontalGroup("Wheel Types/Row", Width = 75, MarginRight = 5)]
+        [PreviewField(75)]
+        [Title("Safe")]
+        public Sprite safeWheel;
+
+        [BoxGroup("Wheel Types")]
+        [HorizontalGroup("Wheel Types/Row", Width = 75)]
+        [PreviewField(75)]
+        [Title("Super")]
+        public Sprite superWheel;
+
+        [BoxGroup("Box Information")]
         [Title("Box Details")]
         [NameCheck(typeof(Box))]
         public string boxName;
 
-        [HorizontalGroup("Box Settings")]
-        [VerticalGroup("Box Settings/Details")]
+        [BoxGroup("Box Information")]
         [Title("Box Description")]
         [TextArea(3, 5)]
         public string description;
@@ -30,15 +53,20 @@ namespace Game.Boxes
         [BoxGroup("Contents")]
         [Searchable]
         [TableList(ShowIndexLabels = true)]
+        [ListDrawerSettings(ShowFoldout = true)]
+        [InfoBox("Add box contents here. Each content represents a wave.", InfoMessageType.Info)]
         public List<BoxContent> contents = new List<BoxContent>();
 
-        public BoxEditorExtension editorExtension;
+#if UNITY_EDITOR
+
+        [SerializeField]
+        private BoxEditorExtension editorExtension;
+
         private void OnEnable()
         {
             editorExtension = new BoxEditorExtension(this);
         }
 
-#if UNITY_EDITOR
         public void UpdateContents()
         {
             for (int i = 0; i < contents.Count; i++)
