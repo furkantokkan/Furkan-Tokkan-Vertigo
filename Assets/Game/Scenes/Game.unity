@@ -735,7 +735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.595, y: 0.379}
   m_AnchorMax: {x: 0.595, y: 0.379}
-  m_AnchoredPosition: {x: 0.4161377, y: -1.7079163}
+  m_AnchoredPosition: {x: 0.4161377, y: -1.7078857}
   m_SizeDelta: {x: 1340.4, y: 707.968}
   m_Pivot: {x: 0.51359016, y: 0.47729692}
 --- !u!114 &405880477
@@ -750,11 +750,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2475aee2553b06b4fac06dc0815032a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 11400000, guid: da81da2b4ec98b74d80880c831270142, type: 2}
+  settings: {fileID: 11400000, guid: b9c220fb15c83ce4a8315805a1d3b689, type: 2}
   wheelTransform: {fileID: 379638906}
   wheelIndicator: {fileID: 784157377}
-  spinDuration: 3
-  spinRotations: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00024414062, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0.00024414062, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.50000006, y: 0.50000006}
 --- !u!114 &1066465016

@@ -8,7 +8,6 @@ namespace Game.Collectable
     public class WheelItem : AbstractCollectable
     {
         public ItemType itemType;
-
         public List<AbstractReward> rewardsToGive = new List<AbstractReward>();
     }
 }

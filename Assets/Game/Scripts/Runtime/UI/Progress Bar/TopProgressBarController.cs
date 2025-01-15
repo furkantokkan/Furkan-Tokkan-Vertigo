@@ -1,5 +1,6 @@
 using Game.UI.Progressbar;
 using Game.UI;
+using Game.UI.Popup;
 using Game.UI.Wheel;
 using Game.Utilities;
 using Sirenix.OdinInspector;
@@ -93,7 +94,6 @@ namespace Game.UI.Progressbar
                 .Subscribe(OnWaveMessage)
                 .AddTo(disposables);
 
-            // Reward message subscription'ý ekle
             MessageBroker.Default
                 .Receive<RewardGivenMessage>()
                 .Subscribe(OnRewardGiven)

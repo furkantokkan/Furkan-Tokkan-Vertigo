@@ -76,7 +76,7 @@ namespace Game.Boxes
         [InfoBox("Add box contents here. Each content represents a wave.", InfoMessageType.Info)]
         public List<BoxContent> contents = new List<BoxContent>();
 
-        public WheelItem GetReward(int currentWave)
+        public WheelSlot GetReward(int currentWave)
         {
             if (currentWave <= 0 || currentWave > contents.Count)
             {
@@ -118,7 +118,7 @@ namespace Game.Boxes
                 currentWeight += slot.weight;
                 if (randomValue <= currentWeight)
                 {
-                    return slot.item;
+                    return slot;
                 }
             }
 

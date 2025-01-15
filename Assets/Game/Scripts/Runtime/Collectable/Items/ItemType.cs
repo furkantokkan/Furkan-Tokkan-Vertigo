@@ -1,7 +1,7 @@
 ﻿// This file was auto-generated
 // Any changes made to this file may be lost
 
-namespace Game.Editor
+namespace Game.Collectable
 {
 	/// <summary>
 	/// Represents ItemType options
