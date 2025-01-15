@@ -1,17 +1,15 @@
 using DG.Tweening;
-using UnityEngine;
-using UnityEngine.UI;
-using UniRx;
 using Game.UI.Progressbar;
 using Game.Utilities;
+using UniRx;
+using UnityEngine.UI;
+using UnityEngine;
 
 public class DOTweenProgressBar : IProgressBar
 {
     private readonly RawImage progressImage;
     private readonly ProgressBarSettings settings;
     private Sequence currentSequence;
-
-    private bool midPointReached;
 
     public DOTweenProgressBar(RawImage progressImage, ProgressBarSettings settings)
     {
@@ -31,17 +29,26 @@ public class DOTweenProgressBar : IProgressBar
     public void PlayTransitionAnimation(int waveNumber)
     {
         Stop();
-        midPointReached = false;
-
         SetPosition(settings.LeftPoint);
 
         currentSequence = DOTween.Sequence();
+
+        var firstMove = DOTween.To(
+            () => progressImage.uvRect.x,
+            SetPosition,
+            settings.FirstStopPoint,
+            settings.LeftMoveDuration
+        ).SetEase(settings.LeftEase);
+
+        firstMove.OnComplete(() => MessageBroker.Default.Publish(GameConst.PROGRESS_FIRST_STOP));
+
+        currentSequence.Append(firstMove);
 
         currentSequence.Append(
             DOTween.To(
                 () => progressImage.uvRect.x,
                 SetPosition,
-                settings.FirstStopPoint,
+                settings.SecondStopPoint,
                 settings.LeftMoveDuration
             ).SetEase(settings.LeftEase)
         );
@@ -49,47 +56,17 @@ public class DOTweenProgressBar : IProgressBar
         currentSequence.Append(
             DOTween.To(
                 () => progressImage.uvRect.x,
-                (x) =>
-                {
-                    SetPosition(x);
-                    CheckMidPoint(x);
-                },
-                settings.JumpPoint,
-                settings.LeftMoveDuration
-            ).SetEase(settings.LeftEase)
-        );
-
-        currentSequence.Append(
-            DOTween.To(
-                () => progressImage.uvRect.x,
-                (x) =>
-                {
-                    SetPosition(x);
-                    CheckMidPoint(x);
-                },
+                SetPosition,
                 settings.RightPoint,
                 settings.RightMoveDuration
             ).SetEase(settings.RightEase)
         );
 
-        currentSequence.AppendCallback(() =>
-        {
-            SetPosition(settings.LeftPoint);
-            midPointReached = false;
-        });
+        currentSequence.AppendCallback(() => SetPosition(settings.LeftPoint));
     }
 
     private void SetPosition(float x)
     {
         progressImage.uvRect = new Rect(x, 0, 1, 1);
-    }
-
-    private void CheckMidPoint(float currentPosition)
-    {
-        if (!midPointReached && currentPosition >= settings.MidPoint)
-        {
-            midPointReached = true;
-            MessageBroker.Default.Publish(GameConst.PROGRESS_MID_POINT);
-        }
     }
 }

@@ -8,10 +8,6 @@ namespace Game.UI.Progressbar
 {
     public class ProgressBarWaveController
     {
-        private readonly IPoolManager<TextMeshProUGUI> poolManager;
-        private readonly ProgressBarSettings settings;
-        private readonly RectTransform waveContainer;
-        private readonly TextMeshProUGUI textPrefab;
         private readonly float CENTER_BOX_SIZE = 130f;
         private readonly float BACK_WAVE_SCALE = 0.6f;
         private readonly float BACK_WAVE_ALPHA = 0.3f;
@@ -19,6 +15,10 @@ namespace Game.UI.Progressbar
         private readonly int INITIAL_WAVE_COUNT = 8;
         private readonly int TOTAL_POSITIONS = 15;
 
+        private readonly IPoolManager<TextMeshProUGUI> poolManager;
+        private readonly ProgressBarSettings settings;
+        private readonly RectTransform waveContainer;
+        private readonly TextMeshProUGUI textPrefab;
         private Sequence currentSequence;
         private bool isMoving;
         private float[] wavePositionsX;
@@ -82,7 +82,7 @@ namespace Game.UI.Progressbar
             }
         }
 
-        public void UpdateWaveVisuals(int currentWave)
+        public void UpdateWaveVisuals(int currentWave, float duration)
         {
             if (isMoving) return;
 
@@ -101,23 +101,23 @@ namespace Game.UI.Progressbar
                     if (targetPosIndex < 0 || targetPosIndex >= TOTAL_POSITIONS)
                         continue;
 
-                    currentSequence.Join(waveText.DOAnchorPosX(wavePositionsX[targetPosIndex], settings.MoveDuration));
+                    currentSequence.Join(waveText.DOAnchorPosX(wavePositionsX[targetPosIndex], duration));
 
                     if (targetPosIndex == 7)
                     {
-                        currentSequence.Join(tmp.DOFade(1f, settings.MoveDuration));
-                        currentSequence.Join(waveText.DOScale(Vector3.one, settings.MoveDuration));
+                        currentSequence.Join(tmp.DOFade(1f, duration));
+                        currentSequence.Join(waveText.DOScale(Vector3.one, duration));
                         currentSequence.Join(waveText.GetComponent<RectTransform>()
-                            .DOSizeDelta(new Vector2(CENTER_BOX_SIZE, CENTER_BOX_SIZE), settings.MoveDuration));
+                            .DOSizeDelta(new Vector2(CENTER_BOX_SIZE, CENTER_BOX_SIZE), duration));
                     }
                     else if (targetPosIndex < 7)
                     {
-                        currentSequence.Join(tmp.DOFade(BACK_WAVE_ALPHA, settings.MoveDuration));
-                        currentSequence.Join(waveText.DOScale(Vector3.one * BACK_WAVE_SCALE, settings.MoveDuration));
+                        currentSequence.Join(tmp.DOFade(BACK_WAVE_ALPHA, duration));
+                        currentSequence.Join(waveText.DOScale(Vector3.one * BACK_WAVE_SCALE, duration));
                     }
                     else if (targetPosIndex <= 1)
                     {
-                        currentSequence.Join(tmp.DOFade(0f, settings.MoveDuration));
+                        currentSequence.Join(tmp.DOFade(0f, duration));
                     }
                 }
 
