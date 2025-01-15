@@ -1325,9 +1325,12 @@ MonoBehaviour:
       Data: 
   boxSprite: {fileID: 21300000, guid: c08f537a70d58594cb17753d1ca1a4c5, type: 3}
   background: {fileID: 21300000, guid: 56e47204f06a2124c9065a375f6eb791, type: 3}
-  defaultWheel: {fileID: 0}
-  safeWheel: {fileID: 0}
-  superWheel: {fileID: 0}
+  defaultWheel: {fileID: 21300000, guid: 222b0ac8627f1374aaa7f9c3235cfd24, type: 3}
+  safeWheel: {fileID: 21300000, guid: dd4de93eb58082d44aefa92e952fb9e3, type: 3}
+  superWheel: {fileID: 21300000, guid: 60b8fdcf4588ef641ad2a10d2c2116d8, type: 3}
+  defaultIndicator: {fileID: 21300000, guid: a3121c054957dbc46beee3d961d0871f, type: 3}
+  safeIndicator: {fileID: 21300000, guid: 1a8aaba80c8ab114990636763053f4b9, type: 3}
+  superIndicator: {fileID: 21300000, guid: 66db8b550a8dfd64b91c885ec317e3e8, type: 3}
   boxName: Big Box
   description: 
   contents:

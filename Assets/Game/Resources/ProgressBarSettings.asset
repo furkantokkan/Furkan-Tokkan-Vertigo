@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d061e757cf93d274e8d9fa2ccf9ceabc, type: 3}
+  m_Name: ProgressBarSettings
+  m_EditorClassIdentifier: 
+  midPoint: -0.5
+  leftPoint: -1.5
+  rightPoint: 0.5
+  leftMoveDuration: 0.3
+  rightMoveDuration: 0.4
+  leftEase: 1
+  rightEase: 1
+  firstStopPoint: -0.8
+  jumpPoint: -0.3
