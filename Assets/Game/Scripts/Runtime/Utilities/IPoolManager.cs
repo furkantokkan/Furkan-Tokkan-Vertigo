@@ -6,6 +6,7 @@ namespace Game.Utilities
 {
     public interface IPoolManager<T> where T : Component
     {
+        T Prefab { get; }
         T Get();
         void Release(T item);
         void Clear();

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using UnityEngine;
 using Game.Utilities;
 using TMPro;
-using UniRx;
 
 namespace Game.UI.Progressbar
 {
@@ -28,56 +27,62 @@ namespace Game.UI.Progressbar
 
         private IProgressBar progressBar;
         private IPoolManager<TextMeshProUGUI> poolManager;
-        private ProgressBarWaveManager waveManager;
-        private ReactiveProperty<int> currentWave;
+        private ProgressBarWaveController waveController;
+        private int currentWave = 1;
 
         private void Awake()
         {
             InitializeDependencies();
-            InitializeReactiveProperties();
         }
 
         private void InitializeDependencies()
         {
-            poolManager = new ProgressBarPoolManager(waveTextPrefab);
-            waveManager = new ProgressBarWaveManager(poolManager, settings, waveContainer);
+            poolManager = new ProgressBarPool(waveTextPrefab);
+            waveController = new ProgressBarWaveController(poolManager, settings, waveContainer);
             progressBar = new DOTweenProgressBar(progressImage, settings);
-        }
-
-        private void InitializeReactiveProperties()
-        {
-            currentWave = new ReactiveProperty<int>(1);
-            currentWave.Subscribe(OnWaveChanged).AddTo(this);
         }
 
         private void Start()
         {
-            
+            ResetProgressBar();
+            waveController.SetupInitialWaves(currentWave);
         }
 
-        private void OnWaveChanged(int newWave)
+        private void ResetProgressBar()
         {
-            progressBar.PlayTransitionAnimation(newWave);
+            progressImage.uvRect = new Rect(settings.LeftPoint, 0, 1, 1);
         }
 
         [FoldoutGroup("Play Mode Test")]
         [Button("Advance Wave")]
         private void AdvanceWave()
         {
-            currentWave.Value++;
+            currentWave++;
+            progressBar.PlayTransitionAnimation(currentWave);
+            waveController.UpdateWaveVisuals(currentWave);
         }
 
         [FoldoutGroup("Play Mode Test")]
         [Button("Play Transition")]
         private void PlayTransition()
         {
-            progressBar.PlayTransitionAnimation(currentWave.Value);
+            progressBar.PlayTransitionAnimation(currentWave);
         }
+
+        [FoldoutGroup("Play Mode Test")]
+        [Button("Reset")]
+        private void Reset()
+        {
+            currentWave = 1;
+            progressBar.Stop();
+            ResetProgressBar();
+            waveController.SetupInitialWaves(currentWave);
+        }
+
         private void OnDestroy()
         {
             progressBar?.Stop();
             poolManager?.Clear();
-            currentWave?.Dispose();
         }
     }
 }

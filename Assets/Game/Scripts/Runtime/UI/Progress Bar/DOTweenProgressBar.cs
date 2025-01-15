@@ -17,7 +17,6 @@ public class DOTweenProgressBar : IProgressBar
     {
         this.progressImage = progressImage;
         this.settings = settings;
-        SetPosition(settings.LeftPoint);
     }
 
     public void Stop()

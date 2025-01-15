@@ -1032,8 +1032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.095917, y: 0}
-  m_SizeDelta: {x: 1338.2, y: 128}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1338, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1066465014
 GameObject:
@@ -1420,8 +1420,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressImage: {fileID: 2006375339}
   settings: {fileID: 11400000, guid: b1f7c54fdde16664bbdf61953fc06d48, type: 2}
-  waveTextPrefab: {fileID: 2251692943174766149, guid: 291544e5aa3f0af46b48d1a22da81973, type: 3}
+  waveTextPrefab: {fileID: 3951154141572460463, guid: 291544e5aa3f0af46b48d1a22da81973, type: 3}
   waveContainer: {fileID: 800628290}
+  currentWave: 1
 --- !u!1 &1853132690
 GameObject:
   m_ObjectHideFlags: 0

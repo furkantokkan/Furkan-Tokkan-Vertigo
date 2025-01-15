@@ -10,6 +10,8 @@ namespace Game.Utilities
         private readonly IObjectPool<T> pool;
         private readonly T prefab;
 
+        public T Prefab => prefab;
+
         public ObjectPoolManager(T prefab, int defaultCapacity = 10)
         {
             this.prefab = prefab;
@@ -18,7 +20,8 @@ namespace Game.Utilities
                 actionOnGet: OnGetItem,
                 actionOnRelease: OnReleaseItem,
                 actionOnDestroy: OnDestroyItem,
-                defaultCapacity: defaultCapacity
+                defaultCapacity: defaultCapacity,
+                maxSize: defaultCapacity * 2
             );
         }
 
