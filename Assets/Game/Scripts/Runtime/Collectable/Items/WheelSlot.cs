@@ -114,14 +114,4 @@ public class WheelSlot
             }
         }
     }
-
-    public bool HasReward(AbstractReward reward)
-    {
-        return reward != null && instanceValues.ContainsKey(reward);
-    }
-
-    public object GetRawValue(AbstractReward reward)
-    {
-        return reward != null && instanceValues.TryGetValue(reward, out var value) ? value : null;
-    }
 }

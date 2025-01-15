@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using Game.Boxes.Editor;
+using System.Linq;
 
 
 namespace Game.Boxes
@@ -74,6 +75,57 @@ namespace Game.Boxes
         [ListDrawerSettings(ShowFoldout = true)]
         [InfoBox("Add box contents here. Each content represents a wave.", InfoMessageType.Info)]
         public List<BoxContent> contents = new List<BoxContent>();
+
+        public WheelItem GetReward(int currentWave)
+        {
+            if (currentWave <= 0 || currentWave > contents.Count)
+            {
+                Debug.LogError($"Invalid wave number: {currentWave}. Available waves: 1-{contents.Count}");
+                return null;
+            }
+
+            BoxContent waveContent = contents[currentWave - 1];
+            if (waveContent == null || waveContent.BoxContentItems == null)
+            {
+                Debug.LogError($"No items found for wave {currentWave}");
+                return null;
+            }
+
+            var slots = waveContent.BoxContentItems.Slots;
+
+            float totalWeight = 0f;
+            foreach (var slot in slots)
+            {
+                if (slot.item != null)
+                {
+                    totalWeight += slot.weight;
+                }
+            }
+
+            if (totalWeight <= 0)
+            {
+                Debug.LogError($"Total weight is 0 for wave {currentWave}");
+                return null;
+            }
+
+            float randomValue = Random.Range(0f, totalWeight);
+            float currentWeight = 0f;
+
+            foreach (var slot in slots)
+            {
+                if (slot.item == null) continue;
+
+                currentWeight += slot.weight;
+                if (randomValue <= currentWeight)
+                {
+                    return slot.item;
+                }
+            }
+
+            Debug.LogError($"No valid items found in wave {currentWave}");
+            return null;
+        }
+
 
 #if UNITY_EDITOR
 
