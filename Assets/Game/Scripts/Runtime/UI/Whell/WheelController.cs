@@ -161,6 +161,23 @@ namespace Game.UI.Wheel
             SpinWheel(wheelSlot);
         }
 
+        private struct SpinData
+        {
+            public float StartRotation;
+            public float TargetRotation;
+            public float TotalRotation;
+        }
+
+        private SpinData CalculateSpinData(WheelSlot wheelSlot)
+        {
+            return new SpinData
+            {
+                StartRotation = wheelTransform.eulerAngles.z,
+                TargetRotation = CalculateTargetRotation(wheelSlot.item),
+                TotalRotation = (360f * settings.SpinRotations)
+            };
+        }
+
         private void SpinWheel(WheelSlot wheelSlot)
         {
             float startRotation = wheelTransform.eulerAngles.z;
@@ -169,27 +186,21 @@ namespace Game.UI.Wheel
 
             Sequence spinSequence = DOTween.Sequence();
 
-            spinSequence.Append(wheelTransform.DORotate(
-                    new Vector3(0, 0, startRotation - (totalRotation * settings.SpinAccelerationRatio)),
-                    settings.SpinDuration * settings.SpinAccelerationDuration,
-                    RotateMode.FastBeyond360)
-                .SetEase(settings.SpinEase));
+            spinSequence.Append(
+                wheelTransform.DORotate(
+                    new Vector3(0, 0, startRotation + totalRotation), 
+                    settings.SpinDuration,
+                    RotateMode.FastBeyond360
+                ).SetEase(settings.SpinEase) 
+            );
 
-            spinSequence.Append(wheelTransform.DORotate(
-                    new Vector3(0, 0, startRotation - totalRotation),
-                    settings.SpinDuration * (1 - settings.SpinAccelerationDuration),
-                    RotateMode.FastBeyond360)
-                .SetEase(settings.EndEase));
-
-            Observable.Timer(TimeSpan.FromSeconds(settings.SpinDuration))
-                .Subscribe(_ =>
-                {
-                    ProcessReward(wheelSlot);
-                    currentWave++;
-                    isSpinning = false;
-                    UpdateWheelVisuals();
-                })
-                .AddTo(disposables);
+            spinSequence.OnComplete(() =>
+            {
+                ProcessReward(wheelSlot);
+                currentWave++;
+                isSpinning = false;
+                UpdateWheelVisuals();
+            });
         }
 
         private float CalculateTargetRotation(WheelItem reward)
@@ -240,7 +251,7 @@ namespace Game.UI.Wheel
         {
             currentWave = 1;
             UpdateWheelVisuals();
-            MessageBroker.Default.Publish(GameConst.WAVE_RESET);
+            MessageBroker.Default.Publish(GameConst.WAVE_FINISH);
         }
 #endif
     }

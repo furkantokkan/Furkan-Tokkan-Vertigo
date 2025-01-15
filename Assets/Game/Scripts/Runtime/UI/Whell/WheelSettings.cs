@@ -18,10 +18,7 @@ namespace Game.UI.Wheel
         [Header("Spin Settings")]
         [SerializeField] private float spinDuration = 3f;
         [SerializeField] private int spinRotations = 5;
-        [SerializeField] private float spinAccelerationRatio = 0.7f;
-        [SerializeField] private float spinAccelerationDuration = 0.6f;
         [SerializeField] private Ease spinEase = Ease.OutQuad;
-        [SerializeField] private Ease endEase = Ease.OutBack;
 
         [Header("Slot Settings")]
         [SerializeField] private float slotDistance = 140f;
@@ -40,10 +37,7 @@ namespace Game.UI.Wheel
 
         public float SpinDuration => spinDuration;
         public int SpinRotations => spinRotations;
-        public float SpinAccelerationRatio => spinAccelerationRatio;
-        public float SpinAccelerationDuration => spinAccelerationDuration;
         public Ease SpinEase => spinEase;
-        public Ease EndEase => endEase;
 
         public float SlotDistance => slotDistance;
         public Vector2 SlotSize => slotSize;
@@ -57,19 +51,8 @@ namespace Game.UI.Wheel
 
         private void OnValidate()
         {
-            ValidateSpinSettings();
             ValidateSlotSettings();
         }
-
-        private void ValidateSpinSettings()
-        {
-            if (spinAccelerationRatio >= 1)
-                spinAccelerationRatio = 0.99f;
-
-            if (spinAccelerationDuration >= 1)
-                spinAccelerationDuration = 0.99f;
-        }
-
         private void ValidateSlotSettings()
         {
             if (slotDistance < 100)

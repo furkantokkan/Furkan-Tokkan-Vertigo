@@ -8,6 +8,6 @@ namespace Game.Utilities
         public const string WAVE_SUPER = "SuperWaveEvent";
         public const string WAVE_SAFE = "SafeWaveEvent";
         public const string WAVE_NORMAL = "NormalWaveEvent";
-        public const string WAVE_RESET = "WaveResetEvent";
+        public const string WAVE_FINISH = "WaveFinishEvent";
     }
 }

@@ -90,7 +90,7 @@ namespace Game.UI.Progressbar
                     msg == GameConst.WAVE_SUPER ||
                     msg == GameConst.WAVE_SAFE ||
                     msg == GameConst.WAVE_NORMAL ||
-                    msg == GameConst.WAVE_RESET)
+                    msg == GameConst.WAVE_FINISH)
                 .Subscribe(OnWaveMessage)
                 .AddTo(disposables);
 
@@ -118,7 +118,7 @@ namespace Game.UI.Progressbar
                 case GameConst.WAVE_NORMAL:
                     progressImage.color = normalColor;
                     break;
-                case GameConst.WAVE_RESET:
+                case GameConst.WAVE_FINISH:
                     Reset();
                     break;
             }
