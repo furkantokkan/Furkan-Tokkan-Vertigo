@@ -751,7 +751,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   box: {fileID: 11400000, guid: da81da2b4ec98b74d80880c831270142, type: 2}
-  wheelTransform: {fileID: 0}
+  wheelTransform: {fileID: 379638906}
+  wheelIndicator: {fileID: 784157377}
   spinDuration: 3
   spinRotations: 5
 --- !u!1 &519420028
@@ -1439,6 +1440,9 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: b1f7c54fdde16664bbdf61953fc06d48, type: 2}
   waveTextPrefab: {fileID: 3951154141572460463, guid: 291544e5aa3f0af46b48d1a22da81973, type: 3}
   waveContainer: {fileID: 800628290}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  safeColor: {r: 0, g: 1, b: 0, a: 1}
+  superColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &1853132690
 GameObject:
   m_ObjectHideFlags: 0

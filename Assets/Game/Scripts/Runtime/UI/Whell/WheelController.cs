@@ -6,6 +6,20 @@ using DG.Tweening;
 using System;
 using UniRx;
 using Game.Collectable;
+using UnityEngine.UI;
+using Sirenix.OdinInspector;
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using Game.Boxes;
+using Game.Collectable;
+using Game.Utilities;
+using Sirenix.OdinInspector;
+using UniRx;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game.UI.Wheel
 {
@@ -13,8 +27,12 @@ namespace Game.UI.Wheel
     {
         [SerializeField] private Box box;
         [SerializeField] private Transform wheelTransform;
+        [SerializeField] private Transform wheelIndicator;
         [SerializeField] private float spinDuration = 3f;
         [SerializeField] private int spinRotations = 5;
+
+        private const float ANGLE_PER_SLOT = 360f / 8;
+        private const float OFFSET_ANGLE = -90f;
 
         private int currentWave = 1;
         private bool isSpinning;
@@ -25,6 +43,36 @@ namespace Game.UI.Wheel
             disposables.Clear();
         }
 
+        private void OnEnable()
+        {
+            UpdateWheelVisuals();
+        }
+
+        private void UpdateWheelVisuals()
+        {
+            var content = box.contents[currentWave - 1];
+            var indicatorSprite = box.defaultIndicator;
+
+            if (content.isSuperBox)
+            {
+                indicatorSprite = box.superIndicator;
+                MessageBroker.Default.Publish(GameConst.WAVE_SUPER);
+            }
+            else if (content.isSafeBox)
+            {
+                indicatorSprite = box.safeIndicator;
+                MessageBroker.Default.Publish(GameConst.WAVE_SAFE);
+            }
+            else
+            {
+                MessageBroker.Default.Publish(GameConst.WAVE_NORMAL);
+            }
+
+            wheelIndicator.GetComponent<Image>().sprite = indicatorSprite;
+            wheelTransform.GetComponent<Image>().sprite = box.defaultWheel;
+        }
+
+        [Button("Spin Wheel", ButtonSizes.Medium)]
         public void SpinTheWheel()
         {
             if (isSpinning) return;
@@ -49,9 +97,9 @@ namespace Game.UI.Wheel
             float totalRotation = (360f * spinRotations) + targetRotation;
 
             wheelTransform.DORotate(
-                new Vector3(0, 0, startRotation - totalRotation),
-                spinDuration,
-                RotateMode.FastBeyond360)
+                    new Vector3(0, 0, startRotation - totalRotation),
+                    spinDuration,
+                    RotateMode.FastBeyond360)
                 .SetEase(Ease.OutQuart);
 
             Observable.Timer(TimeSpan.FromSeconds(spinDuration))
@@ -60,33 +108,57 @@ namespace Game.UI.Wheel
                     GiveReward(reward);
                     currentWave++;
                     isSpinning = false;
-                    MessageBroker.Default.Publish(new WaveChangedMessage(currentWave));
+                    UpdateWheelVisuals();
                 })
                 .AddTo(disposables);
         }
 
         private float CalculateTargetRotation(WheelItem reward)
         {
-            // TODO: Implement actual calculation based on your wheel setup
-            // Örnek: 6 slot varsa her slot 60 derece
-            // Reward'ýn slot numarasýna göre açýyý hesapla
-            return 0f;
+            int slotIndex = FindRewardSlotIndex(reward);
+            float angle = (slotIndex * ANGLE_PER_SLOT) + OFFSET_ANGLE;
+            return angle;
+        }
+
+        private int FindRewardSlotIndex(WheelItem reward)
+        {
+            var content = box.contents[currentWave - 1];
+            var slots = content.BoxContentItems.Slots;
+
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (slots[i].item == reward)
+                {
+                    return i;
+                }
+            }
+
+            Debug.LogError($"Reward {reward.name} not found in any slot!");
+            return 0;
         }
 
         private void GiveReward(WheelItem reward)
         {
-            // TODO: Implement reward giving logic
             Debug.Log($"Giving reward: {reward.name}");
+            MessageBroker.Default.Publish(new RewardGivenMessage(reward, currentWave));
         }
-    }
 
-    public readonly struct WaveChangedMessage
-    {
-        public readonly int NewWave;
-
-        public WaveChangedMessage(int newWave)
+#if UNITY_EDITOR
+        [Button("Next Wave", ButtonSizes.Medium)]
+        private void NextWave()
         {
-            NewWave = newWave;
+            currentWave++;
+            UpdateWheelVisuals();
         }
+
+        [Button("Reset Wave", ButtonSizes.Medium)]
+        private void ResetWave()
+        {
+            currentWave = 1;
+            UpdateWheelVisuals();
+            MessageBroker.Default.Publish(GameConst.WAVE_RESET);
+        }
+#endif
     }
+
 }
