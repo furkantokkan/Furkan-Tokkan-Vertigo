@@ -29,6 +29,11 @@ namespace Game.UI.Wheel
         [SerializeField] private Vector2 textSize = new Vector2(30, 12);
         [SerializeField] private float textScale = 0.8f;
 
+        public readonly float AnglePerSlot = 360f / 8;
+        public readonly float OffsetAngle = 0;
+        public readonly int SlotCount = 8;
+
+
         public Box Box => box;
         public GameObject SlotPrefab => slotPrefab;
 
@@ -44,10 +49,6 @@ namespace Game.UI.Wheel
         public Vector2 ImageSize => imageSize;
         public Vector2 TextSize => textSize;
         public float TextScale => textScale;
-
-        public const float ANGLE_PER_SLOT = 360f / 8;
-        public const float OFFSET_ANGLE = -90f;
-        public const int SLOT_COUNT = 8;
 
         private void OnValidate()
         {

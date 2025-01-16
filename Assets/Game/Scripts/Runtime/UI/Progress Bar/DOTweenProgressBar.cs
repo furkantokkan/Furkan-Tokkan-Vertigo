@@ -40,7 +40,7 @@ public class DOTweenProgressBar : IProgressBar
             settings.LeftMoveDuration
         ).SetEase(settings.LeftEase);
 
-        firstMove.OnComplete(() => MessageBroker.Default.Publish(GameConst.PROGRESS_FIRST_STOP));
+        firstMove.OnComplete(() => MessageBroker.Default.Publish(GameConst.Events.PROGRESS_FIRST_STOP));
 
         currentSequence.Append(firstMove);
 

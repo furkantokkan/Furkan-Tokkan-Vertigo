@@ -80,17 +80,17 @@ namespace Game.UI.Progressbar
         {
             MessageBroker.Default
                 .Receive<string>()
-                .Where(msg => msg == GameConst.PROGRESS_FIRST_STOP)
+                .Where(msg => msg == GameConst.Events.PROGRESS_FIRST_STOP)
                 .Subscribe(_ => OnFirstStopReached())
                 .AddTo(disposables);
 
             MessageBroker.Default
                 .Receive<string>()
                 .Where(msg =>
-                    msg == GameConst.WAVE_SUPER ||
-                    msg == GameConst.WAVE_SAFE ||
-                    msg == GameConst.WAVE_NORMAL ||
-                    msg == GameConst.WAVE_FINISH)
+                    msg == GameConst.Events.WAVE_SUPER ||
+                    msg == GameConst.Events.WAVE_SAFE ||
+                    msg == GameConst.Events.WAVE_NORMAL ||
+                    msg == GameConst.Events.GAME_OVER)
                 .Subscribe(OnWaveMessage)
                 .AddTo(disposables);
 
@@ -109,16 +109,16 @@ namespace Game.UI.Progressbar
         {
             switch (message)
             {
-                case GameConst.WAVE_SUPER:
+                case GameConst.Events.WAVE_SUPER:
                     progressImage.color = superColor;
                     break;
-                case GameConst.WAVE_SAFE:
+                case GameConst.Events.WAVE_SAFE:
                     progressImage.color = safeColor;
                     break;
-                case GameConst.WAVE_NORMAL:
+                case GameConst.Events.WAVE_NORMAL:
                     progressImage.color = normalColor;
                     break;
-                case GameConst.WAVE_FINISH:
+                case GameConst.Events.GAME_OVER:
                     Reset();
                     break;
             }

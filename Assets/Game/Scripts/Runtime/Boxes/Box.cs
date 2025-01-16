@@ -78,13 +78,8 @@ namespace Game.Boxes
 
         public WheelSlot GetReward(int currentWave)
         {
-            if (currentWave <= 0 || currentWave > contents.Count)
-            {
-                Debug.LogError($"Invalid wave number: {currentWave}. Available waves: 1-{contents.Count}");
-                return null;
-            }
+            BoxContent waveContent = contents[currentWave];
 
-            BoxContent waveContent = contents[currentWave - 1];
             if (waveContent == null || waveContent.BoxContentItems == null)
             {
                 Debug.LogError($"No items found for wave {currentWave}");

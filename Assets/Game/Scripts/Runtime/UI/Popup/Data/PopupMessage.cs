@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Game.UI.Popup
 {
-    public class PopupMessage 
+    public class PopupMessage
     {
         public string Title { get; private set; }
         public string Message { get; private set; }
