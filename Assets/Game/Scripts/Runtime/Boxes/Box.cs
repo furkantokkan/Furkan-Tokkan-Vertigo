@@ -74,6 +74,7 @@ namespace Game.Boxes
         [TableList(ShowIndexLabels = true)]
         [ListDrawerSettings(ShowFoldout = true)]
         [InfoBox("Add box contents here. Each content represents a wave.", InfoMessageType.Info)]
+        [SerializeField]
         public List<BoxContent> contents = new List<BoxContent>();
 
         public WheelSlot GetReward(int currentWave)

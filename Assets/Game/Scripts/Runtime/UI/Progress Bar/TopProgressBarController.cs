@@ -114,6 +114,7 @@ namespace Game.UI.Progressbar
                     break;
                 case GameConst.Events.WAVE_SAFE:
                     progressImage.color = safeColor;
+                    Debug.Log("Safe Wave");
                     break;
                 case GameConst.Events.WAVE_NORMAL:
                     progressImage.color = normalColor;

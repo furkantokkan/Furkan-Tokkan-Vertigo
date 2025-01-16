@@ -21,7 +21,7 @@ namespace Game.Boxes
 
         [BoxGroup("Content Settings")]
         [PropertyTooltip("Wave index in the box (1-based)")]
-        [ReadOnly, ShowInInspector]
+        [ReadOnly, SerializeField]
         private int waveIndex;
 
         [BoxGroup("Content Settings")]
@@ -38,6 +38,7 @@ namespace Game.Boxes
 
         [TitleGroup("Slot Settings")]
         [HideLabel]
+        [SerializeField]
         public BoxContentItems BoxContentItems;
 
         public void Initialize(Dependency dep)

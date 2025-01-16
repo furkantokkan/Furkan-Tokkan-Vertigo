@@ -52,34 +52,31 @@ namespace Game.UI.Wheel
 
             Sequence spinSequence = DOTween.Sequence();
 
-            // Hýzlanma fazý
             spinSequence.Append(
                 wheelTransform.DORotate(
-                    new Vector3(0, 0, currentRotation + (totalRotation * 0.4f)),
-                    settings.SpinDuration * 0.3f,
+                    new Vector3(0, 0, currentRotation + (totalRotation * 0.3f)),
+                    settings.SpinDuration * 0.15f, 
                     RotateMode.FastBeyond360
-                ).SetEase(Ease.InQuad)
+                ).SetEase(settings.SpinEasePhase1)
             );
 
-            // Sabit hýzlý dönüþ fazý
             spinSequence.Append(
                 wheelTransform.DORotate(
-                    new Vector3(0, 0, currentRotation + (totalRotation * 0.9f)),
-                    settings.SpinDuration * 0.5f,
+                    new Vector3(0, 0, currentRotation + (totalRotation * 0.8f)),
+                    settings.SpinDuration * 0.45f, 
                     RotateMode.FastBeyond360
-                ).SetEase(Ease.Linear)
+                ).SetEase(settings.SpinEasePhase2)
             );
 
-            // Yavaþlama ve hedefi bulma fazý
             spinSequence.Append(
                 wheelTransform.DORotate(
                     new Vector3(0, 0, currentRotation + totalRotation),
-                    settings.SpinDuration * 0.2f,
+                    settings.SpinDuration * 0.4f,  
                     RotateMode.FastBeyond360
-                ).SetEase(Ease.OutQuart)
+                ).SetEase(settings.SpinEasePhase3)
             );
 
-            spinSequence.SetDelay(0.5f);
+            spinSequence.SetDelay(1f);
 
             spinSequence.OnComplete(() =>
             {
