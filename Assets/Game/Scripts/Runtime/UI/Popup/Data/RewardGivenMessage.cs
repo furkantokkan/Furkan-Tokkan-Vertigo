@@ -5,13 +5,13 @@ namespace Game.UI.Popup
 {
     public class RewardGivenMessage : PopupMessage
     {
-        public WheelItem Item { get; private set; }
+        public WheelSlot Slot { get; private set; }
         public int CurrentWave { get; private set; }
 
-        public RewardGivenMessage(WheelItem item, int currentWave)
-            : base($"Reward: {item.name}", $"You got {item.name} in Wave {currentWave}")
+        public RewardGivenMessage(WheelSlot slot, int currentWave)
+            : base($"Reward: {slot.item.ItemName}", $"You got {slot.item.ItemName} in Wave {currentWave}")
         {
-            Item = item;
+            Slot = slot;
             CurrentWave = currentWave;
         }
     }

@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3961313799434563476}
   - component: {fileID: 1486258031582964292}
+  - component: {fileID: 142681295080383720}
   m_Layer: 5
   m_Name: ui_reward_panel_bottom_content
   m_TagString: Untagged
@@ -258,3 +259,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7951999367677026382}
   m_CullTransparentMesh: 1
+--- !u!114 &142681295080383720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951999367677026382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8457b56cc510c48b8c333bebd12476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIcon: {fileID: 7798445717515546224}
+  amountText: {fileID: 567616122928231020}

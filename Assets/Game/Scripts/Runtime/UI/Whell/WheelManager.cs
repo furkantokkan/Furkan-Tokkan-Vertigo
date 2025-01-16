@@ -36,20 +36,39 @@ namespace Game.UI.Wheel
             SubscribeToEvents();
             CheckAndPublishWaveType();
         }
-
+        private void OnDestroy()
+        {
+            disposables.Clear();
+            fortuneWheel.Clear();
+        }
         private void SubscribeToEvents()
         {
             MessageBroker.Default.Receive<string>()
                 .Where(msg => msg == GameConst.Events.REWARD_POPUP_CLOSED ||
-                             msg == GameConst.Events.BOMB_POPUP_CLOSED)
-                .Subscribe(_ =>
+                              msg == GameConst.Events.BOMB_POPUP_CLOSED ||
+                              msg == GameConst.Events.GAME_OVER)  
+                .Subscribe(msg =>
                 {
-                    fortuneWheel.UpdateVisuals(currentWave);
-                    CheckAndPublishWaveType();
+                    if (msg == GameConst.Events.GAME_OVER)
+                    {
+                        ResetGame();
+                    }
+                    else
+                    {
+                        fortuneWheel.UpdateVisuals(currentWave);
+                        CheckAndPublishWaveType();
+                    }
                 })
                 .AddTo(disposables);
         }
-
+        private void ResetGame()
+        {
+            currentWave = 1;
+            fortuneWheel.Clear();
+            fortuneWheel.Initialize();
+            fortuneWheel.UpdateVisuals(currentWave);
+            CheckAndPublishWaveType();
+        }
         private void CheckAndPublishWaveType()
         {
             var content = settings.Box.contents[currentWave];
@@ -102,24 +121,15 @@ namespace Game.UI.Wheel
             }
             else
             {
-                MessageBroker.Default.Publish(new RewardGivenMessage(wheelSlot.item, currentWave));
+                MessageBroker.Default.Publish(new RewardGivenMessage(wheelSlot, currentWave));
             }
-        }
-
-        private void OnDestroy()
-        {
-            disposables.Clear();
-            fortuneWheel.Clear();
         }
 
 #if UNITY_EDITOR
         [Button("Reset Wave", ButtonSizes.Medium)]
         private void ResetWave()
         {
-            currentWave = 1;
-            fortuneWheel.UpdateVisuals(currentWave);
             MessageBroker.Default.Publish(GameConst.Events.GAME_OVER);
-            CheckAndPublishWaveType();
         }
 #endif
     }

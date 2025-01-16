@@ -37,7 +37,7 @@ namespace Game.UI
         private void HandleRewardMessage(RewardGivenMessage message)
         {
             if (bombPopup.gameObject.activeInHierarchy) return;
-            rewardPopup.SetContent(message.Title, message.Message, message.Item.ItemSprite);
+            rewardPopup.SetContent(message.Title, message.Message, message.Slot.item.ItemSprite);
             rewardPopup.Show();
         }
 

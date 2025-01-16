@@ -28,13 +28,13 @@ namespace Game.Boxes
         [ShowIf("isSuperBox")]
         [InfoBox("This is a Super Wave", InfoMessageType.Info)]
         [ReadOnly]
-        public bool isSuperBox => waveIndex > 0 && (waveIndex + 1) % 30 == 0;
+        public bool isSuperBox => waveIndex > 0 && (waveIndex) % 30 == 0;
 
         [ReadOnly]
         [BoxGroup("Content Settings")]
         [ShowIf("isSafeBox")]
         [InfoBox("This is a Safe Wave", InfoMessageType.Info)]
-        public bool isSafeBox => waveIndex > 0 && (waveIndex + 1) % 5 == 0;
+        public bool isSafeBox => waveIndex > 0 && (waveIndex) % 5 == 0;
 
         [TitleGroup("Slot Settings")]
         [HideLabel]

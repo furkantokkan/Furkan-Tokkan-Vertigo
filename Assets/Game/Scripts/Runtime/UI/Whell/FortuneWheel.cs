@@ -100,11 +100,18 @@ namespace Game.UI.Wheel
 
         public void Clear()
         {
+            isSpinning = false;
+
+            DOTween.Kill(wheelTransform);
+
+            wheelTransform.rotation = Quaternion.identity;
+
             foreach (var slot in slotObjects)
             {
                 if (slot != null)
                     UnityEngine.Object.Destroy(slot);
             }
+
             slotObjects.Clear();
             itemAngles.Clear();
             currentContent = null;
