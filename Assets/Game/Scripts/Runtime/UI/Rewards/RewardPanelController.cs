@@ -24,12 +24,11 @@ namespace Game.UI.Rewards
         {
             InitializePool();
             SubscribeToEvents();
+            exitButton.onClick.AddListener(() => RequestExitPopup());
         }
-
         private void OnValidate()
         {
             exitButton = GetComponentInChildren<Button>();
-            exitButton.onClick.AddListener(() => RequestExitPopup()); 
         }
 
         private void InitializePool()

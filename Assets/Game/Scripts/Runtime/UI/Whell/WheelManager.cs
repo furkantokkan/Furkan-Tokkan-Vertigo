@@ -30,6 +30,7 @@ namespace Game.UI.Wheel
             fortuneWheel = new FortuneWheel(wheelTransform, wheelIndicator, settings);
             wheelImage = wheelTransform.GetComponent<Image>();
             wheelIndicatorImage = wheelIndicator.GetComponent<Image>();
+            spinButton.onClick.AddListener(SpinTheWheel);
         }
 
         private void OnEnable()
@@ -42,7 +43,6 @@ namespace Game.UI.Wheel
         private void OnValidate()
         {
             spinButton = GetComponentInChildren<Button>();
-            spinButton.onClick.AddListener(SpinTheWheel);
         }
         private void OnDestroy()
         {
