@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using Game.Boxes;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
@@ -164,3 +165,4 @@ namespace Game.Editor
         }
     }
 }
+#endif

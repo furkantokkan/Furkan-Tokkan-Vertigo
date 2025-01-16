@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using Sirenix.OdinInspector.Editor;
 using System;
 using System.Collections.Generic;
@@ -73,3 +74,4 @@ namespace Game.Editor
         }
     }
 }
+#endif

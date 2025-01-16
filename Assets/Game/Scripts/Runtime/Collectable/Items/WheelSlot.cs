@@ -13,9 +13,11 @@ public class WheelSlot : ISerializationCallbackReceiver
     [Tooltip("Probability of this slot appearing on the wheel")]
     public float weight;
 
-    [SerializeField]
+#if UNITY_EDITOR
     [OnValueChanged(nameof(OnItemChanged))]
     [Tooltip("Reward item to be displayed in the slot")]
+#endif
+    [SerializeField]
     public WheelItem item;
 
     [SerializeField]

@@ -3,9 +3,10 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using Game.Boxes.Editor;
 using System.Linq;
-
+#if UNITY_EDITOR
+using Game.Boxes.Editor;
+#endif
 
 namespace Game.Boxes
 {
