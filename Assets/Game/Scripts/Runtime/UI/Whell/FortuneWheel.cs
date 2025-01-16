@@ -55,7 +55,7 @@ namespace Game.UI.Wheel
             spinSequence.Append(
                 wheelTransform.DORotate(
                     new Vector3(0, 0, currentRotation + (totalRotation * 0.3f)),
-                    settings.SpinDuration * 0.15f, 
+                    settings.SpinDuration * 0.05f, 
                     RotateMode.FastBeyond360
                 ).SetEase(settings.SpinEasePhase1)
             );
@@ -71,12 +71,10 @@ namespace Game.UI.Wheel
             spinSequence.Append(
                 wheelTransform.DORotate(
                     new Vector3(0, 0, currentRotation + totalRotation),
-                    settings.SpinDuration * 0.4f,  
+                    settings.SpinDuration * 0.5f,  
                     RotateMode.FastBeyond360
                 ).SetEase(settings.SpinEasePhase3)
             );
-
-            spinSequence.SetDelay(1f);
 
             spinSequence.OnComplete(() =>
             {

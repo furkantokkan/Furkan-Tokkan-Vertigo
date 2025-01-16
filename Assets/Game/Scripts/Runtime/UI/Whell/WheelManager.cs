@@ -12,14 +12,17 @@ namespace Game.UI.Wheel
     {
         [Header("Settings")]
         [SerializeField] private WheelSettings settings;
+        [SerializeField] private Button spinButton; 
         [SerializeField] private Transform wheelTransform;
         [SerializeField] private Transform wheelIndicator;
-
+        
         private Image wheelImage;
         private Image wheelIndicatorImage; 
 
         private IFortuneWheel fortuneWheel;
-        private int currentWave = 1;
+        
+        private int currentWave = 0;
+        
         private readonly CompositeDisposable disposables = new CompositeDisposable();
 
         private void Awake()
@@ -35,6 +38,11 @@ namespace Game.UI.Wheel
             fortuneWheel.UpdateVisuals(currentWave);
             SubscribeToEvents();
             CheckAndPublishWaveType();
+        }
+        private void OnValidate()
+        {
+            spinButton = GetComponentInChildren<Button>();
+            spinButton.onClick.AddListener(SpinTheWheel);
         }
         private void OnDestroy()
         {
@@ -63,7 +71,7 @@ namespace Game.UI.Wheel
         }
         private void ResetGame()
         {
-            currentWave = 1;
+            currentWave = 0;
             fortuneWheel.Clear();
             fortuneWheel.Initialize();
             fortuneWheel.UpdateVisuals(currentWave);
