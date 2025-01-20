@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WheelSettings
   m_EditorClassIdentifier: 
   box: {fileID: 11400000, guid: da81da2b4ec98b74d80880c831270142, type: 2}
-  slotPrefab: {fileID: 3041750124986129014, guid: fdb4302f1101e9245ac91017d01a7194, type: 3}
+  slotPrefab: {fileID: 1666001474744523748, guid: fdb4302f1101e9245ac91017d01a7194, type: 3}
   spinDuration: 2
   spinRotations: 5
   spinEasePhase1: 12

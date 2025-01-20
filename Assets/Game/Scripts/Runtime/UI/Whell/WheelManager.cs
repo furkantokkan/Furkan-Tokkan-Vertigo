@@ -27,7 +27,7 @@ namespace Game.UI.Wheel
 
         private void Awake()
         {
-            fortuneWheel = new FortuneWheel(wheelTransform, wheelIndicator, settings);
+            fortuneWheel = new FortuneWheel(wheelTransform, settings);
             wheelImage = wheelTransform.GetComponent<Image>();
             wheelIndicatorImage = wheelIndicator.GetComponent<Image>();
             spinButton.onClick.AddListener(SpinTheWheel);

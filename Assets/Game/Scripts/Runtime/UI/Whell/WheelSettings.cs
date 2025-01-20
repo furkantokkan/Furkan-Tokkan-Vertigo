@@ -13,7 +13,7 @@ namespace Game.UI.Wheel
         [SerializeField] private Box box;
 
         [Header("Slot Prefab")]
-        [SerializeField] private GameObject slotPrefab;
+        [SerializeField] private WheelObject slotPrefab;
 
         [Header("Spin Settings")]
         [SerializeField] private float spinDuration = 3f;
@@ -47,7 +47,7 @@ namespace Game.UI.Wheel
 
         // Properties
         public Box Box => box;
-        public GameObject SlotPrefab => slotPrefab;
+        public WheelObject SlotPrefab => slotPrefab;
         public float ImageVerticalOffset => imageVerticalOffset;
         public float TextVerticalOffset => textVerticalOffset;
         public float SpinDuration => spinDuration;

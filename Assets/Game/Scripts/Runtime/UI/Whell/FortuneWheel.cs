@@ -12,23 +12,24 @@ namespace Game.UI.Wheel
     public class FortuneWheel : IFortuneWheel
     {
         private readonly Transform wheelTransform;
-        private readonly Transform indicatorTransform;
         private readonly WheelSettings settings;
         private readonly Dictionary<WheelItem, float> itemAngles;
-        private readonly List<GameObject> slotObjects;
+        private readonly WheelPoolManager poolManager;
+        private readonly List<WheelObject> activeSlots;
+
         private BoxContent currentContent;
         private WheelSlot[] currentSlots;
         private bool isSpinning;
 
         public bool IsSpinning => isSpinning;
 
-        public FortuneWheel(Transform wheelTransform, Transform indicatorTransform, WheelSettings settings)
+        public FortuneWheel(Transform wheelTransform, WheelSettings settings)
         {
             this.wheelTransform = wheelTransform;
-            this.indicatorTransform = indicatorTransform;
             this.settings = settings;
             this.itemAngles = new Dictionary<WheelItem, float>();
-            this.slotObjects = new List<GameObject>();
+            this.activeSlots = new List<WheelObject>();
+            this.poolManager = new WheelPoolManager(settings.SlotPrefab, settings.SlotCount);
         }
 
         public void Initialize()
@@ -43,38 +44,97 @@ namespace Game.UI.Wheel
 
             isSpinning = true;
             float targetAngle = itemAngles[wheelSlot.item];
-            float currentRotation = wheelTransform.eulerAngles.z;
-            float finalRotation = CalculateTargetRotation(targetAngle);
+            ExecuteSpinSequence(targetAngle, onComplete);
+        }
 
+        public void UpdateVisuals(int currentWave)
+        {
+            var content = settings.Box.contents[currentWave];
+            if (currentContent != content)
+            {
+                currentContent = content;
+                currentSlots = content.BoxContentItems.Slots;
+                UpdateSlotContents();
+            }
+        }
+
+        public void Clear()
+        {
+            isSpinning = false;
+            Stop();
+            ClearSlots();
+            itemAngles.Clear();
+            currentContent = null;
+            currentSlots = null;
+        }
+
+        private void CreateSlots()
+        {
+            ClearSlots();
+
+            for (int i = 0; i < settings.SlotCount; i++)
+            {
+                var slot = poolManager.Get();
+                ConfigureSlotTransform(slot, i);
+                activeSlots.Add(slot);
+            }
+        }
+
+        private void ConfigureSlotTransform(WheelObject slot, int index)
+        {
+            float angle = index * settings.AnglePerSlot;
+            float radian = angle * Mathf.Deg2Rad;
+            Vector3 position = new Vector3(
+                -Mathf.Sin(radian) * settings.SlotDistance,
+                Mathf.Cos(radian) * settings.SlotDistance,
+                0
+            );
+
+            slot.transform.SetParent(wheelTransform);
+            slot.transform.localPosition = position;
+            slot.transform.localRotation = Quaternion.Euler(0, 0,
+                Mathf.Atan2(-position.normalized.y, -position.normalized.x) * Mathf.Rad2Deg + 90);
+
+            var rectTransform = slot.GetComponent<RectTransform>();
+            if (rectTransform != null)
+                rectTransform.sizeDelta = settings.SlotSize;
+        }
+
+        private void UpdateSlotContents()
+        {
+            itemAngles.Clear();
+            for (int i = 0; i < settings.SlotCount && i < currentSlots.Length; i++)
+            {
+                if (currentSlots[i].item != null && i < activeSlots.Count)
+                {
+                    itemAngles[currentSlots[i].item] = i * settings.AnglePerSlot;
+                    UpdateSlotVisuals(i);
+                }
+            }
+        }
+        private void UpdateSlotVisuals(int index)
+        {
+            var slot = activeSlots[index];
+            var item = currentSlots[index].item;
+            float value = item.rewardsToGive.Count > 0
+                ? currentSlots[index].GetValue<float>(item.rewardsToGive[0])
+                : 0;
+
+            slot.SetContent(item.ItemSprite, $"x{value:F0}");
+        }
+
+        private void ExecuteSpinSequence(float targetAngle, Action onComplete)
+        {
+            float currentRotation = wheelTransform.eulerAngles.z;
+            float finalRotation = (-targetAngle + settings.OffsetAngle + 360) % 360;
             currentRotation = ((currentRotation % 360) + 360) % 360;
-            float shortestRotation = Mathf.DeltaAngle(currentRotation, finalRotation);
-            float totalRotation = (360f * settings.SpinRotations) + shortestRotation;
+            float totalRotation = (360f * settings.SpinRotations) + Mathf.DeltaAngle(currentRotation, finalRotation);
 
             Sequence spinSequence = DOTween.Sequence();
 
-            spinSequence.Append(
-                wheelTransform.DORotate(
-                    new Vector3(0, 0, currentRotation + (totalRotation * 0.3f)),
-                    settings.SpinDuration * 0.05f, 
-                    RotateMode.FastBeyond360
-                ).SetEase(settings.SpinEasePhase1)
-            );
-
-            spinSequence.Append(
-                wheelTransform.DORotate(
-                    new Vector3(0, 0, currentRotation + (totalRotation * 0.8f)),
-                    settings.SpinDuration * 0.45f, 
-                    RotateMode.FastBeyond360
-                ).SetEase(settings.SpinEasePhase2)
-            );
-
-            spinSequence.Append(
-                wheelTransform.DORotate(
-                    new Vector3(0, 0, currentRotation + totalRotation),
-                    settings.SpinDuration * 0.5f,  
-                    RotateMode.FastBeyond360
-                ).SetEase(settings.SpinEasePhase3)
-            );
+            spinSequence.Append(CreateSpinTween(currentRotation, totalRotation * 0.3f, settings.SpinDuration * 0.05f, settings.SpinEasePhase1));
+            spinSequence.Append(CreateSpinTween(currentRotation, totalRotation * 0.8f, settings.SpinDuration * 0.45f, settings.SpinEasePhase2));
+            spinSequence.Append(CreateSpinTween(currentRotation, totalRotation, settings.SpinDuration * 0.5f, settings.SpinEasePhase3));
 
             spinSequence.OnComplete(() =>
             {
@@ -83,141 +143,29 @@ namespace Game.UI.Wheel
             });
         }
 
-        public void UpdateVisuals(int currentWave)
+        private Tween CreateSpinTween(float currentRotation, float targetRotation, float duration, Ease easeType)
         {
-            var content = settings.Box.contents[currentWave];
-
-            if (currentContent != content)
-            {
-                currentContent = content;
-                currentSlots = content.BoxContentItems.Slots;
-                UpdateWheelSprite(content);
-                UpdateSlotContents();
-            }
+            return wheelTransform.DORotate(
+                new Vector3(0, 0, currentRotation + targetRotation),
+                duration,
+                RotateMode.FastBeyond360
+            ).SetEase(easeType);
         }
 
-        public void Clear()
+        private void Stop()
         {
-            isSpinning = false;
-
             DOTween.Kill(wheelTransform);
-
             wheelTransform.rotation = Quaternion.identity;
+        }
 
-            foreach (var slot in slotObjects)
+        private void ClearSlots()
+        {
+            foreach (var slot in activeSlots)
             {
                 if (slot != null)
-                    UnityEngine.Object.Destroy(slot);
+                    poolManager.Release(slot);
             }
-
-            slotObjects.Clear();
-            itemAngles.Clear();
-            currentContent = null;
-            currentSlots = null;
-        }
-
-        private void CreateSlots()
-        {
-            Clear();
-
-            for (int i = 0; i < settings.SlotCount; i++)
-            {
-                float angle = i * settings.AnglePerSlot;
-                Vector3 position = CalculateSlotPosition(angle);
-
-                Vector3 directionToCenter = -position.normalized;
-                float rotationAngle = Mathf.Atan2(directionToCenter.y, directionToCenter.x) * Mathf.Rad2Deg;
-                Quaternion rotation = Quaternion.Euler(0, 0, rotationAngle + 90);
-
-                var slotObject = UnityEngine.Object.Instantiate(settings.SlotPrefab, wheelTransform);
-                slotObject.transform.localPosition = position;
-                slotObject.transform.localRotation = rotation;
-
-                var rectTransform = slotObject.GetComponent<RectTransform>();
-                if (rectTransform != null)
-                {
-                    rectTransform.sizeDelta = settings.SlotSize;
-                }
-
-                slotObjects.Add(slotObject);
-            }
-        }
-
-        private Vector3 CalculateSlotPosition(float angle)
-        {
-            float radian = angle * Mathf.Deg2Rad;
-            float x = -Mathf.Sin(radian) * settings.SlotDistance;
-            float y = Mathf.Cos(radian) * settings.SlotDistance;
-            return new Vector3(x, y, 0);
-        }
-
-        private float CalculateTargetRotation(float itemAngle)
-        {
-            float targetAngle = -itemAngle;
-            targetAngle += settings.OffsetAngle;
-            return ((targetAngle % 360) + 360) % 360;
-        }
-
-        private void UpdateWheelSprite(BoxContent content)
-        {
-            var indicatorSprite = settings.Box.defaultIndicator;
-
-            if (content.isSuperBox)
-            {
-                indicatorSprite = settings.Box.superIndicator;
-            }
-            else if (content.isSafeBox)
-            {
-                indicatorSprite = settings.Box.safeIndicator;
-            }
-
-            indicatorTransform.GetComponent<Image>().sprite = indicatorSprite;
-            wheelTransform.GetComponent<Image>().sprite = settings.Box.defaultWheel;
-        }
-
-        private void UpdateSlotContents()
-        {
-            itemAngles.Clear();
-
-            for (int i = 0; i < settings.SlotCount && i < currentSlots.Length; i++)
-            {
-                if (currentSlots[i].item != null && slotObjects[i] != null)
-                {
-                    float angle = i * settings.AnglePerSlot;
-                    itemAngles[currentSlots[i].item] = angle;
-                    UpdateSlotVisuals(i, currentSlots[i]);
-                }
-            }
-        }
-
-        private void UpdateSlotVisuals(int index, WheelSlot slot)
-        {
-            var slotImage = slotObjects[index].GetComponentInChildren<Image>();
-            var slotText = slotObjects[index].GetComponentInChildren<TextMeshProUGUI>();
-
-            if (slotImage != null)
-            {
-                slotImage.sprite = slot.item.ItemSprite;
-                slotImage.preserveAspect = true;
-
-                var rectTransform = slotImage.rectTransform;
-                rectTransform.sizeDelta = settings.ImageSize;
-                rectTransform.anchoredPosition = new Vector2(0, settings.ImageVerticalOffset);
-            }
-
-            if (slotText != null && slot.item.rewardsToGive.Count > 0)
-            {
-                var reward = slot.item.rewardsToGive[0];
-                var amount = slot.GetValue<float>(reward);
-                slotText.text = $"x{amount:F0}";
-
-                slotText.transform.rotation = slotObjects[index].transform.rotation;
-                slotText.transform.localScale = Vector3.one * settings.TextScale;
-
-                var rectTransform = slotText.rectTransform;
-                rectTransform.anchoredPosition = new Vector2(0, settings.TextVerticalOffset);
-                rectTransform.sizeDelta = settings.TextSize;
-            }
+            activeSlots.Clear();
         }
     }
 }
