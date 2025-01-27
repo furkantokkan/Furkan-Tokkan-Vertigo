@@ -32,7 +32,7 @@ namespace Game.Editor
                                 EnumGenerator.GenerateMode.Append,
                                 (x) =>
                                 {
-                                    bombItem.ItemName = bombItem.name;
+                                    bombItem.itemName = bombItem.name;
                                     bombItem.itemType = (ItemType)x[0];
 
                                     EditorUtility.SetDirty(bombItem);
@@ -62,7 +62,7 @@ namespace Game.Editor
                                 EnumGenerator.GenerateMode.Append,
                                 (x) =>
                                 {
-                                    wheelItem.ItemName = wheelItem.name;
+                                    wheelItem.itemName = wheelItem.name;
                                     wheelItem.itemType = (ItemType)x[0];
 
                                     EditorUtility.SetDirty(wheelItem);

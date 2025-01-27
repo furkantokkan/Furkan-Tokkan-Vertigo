@@ -36,7 +36,7 @@ namespace Game.Editor
                                     EnumGenerator.GenerateMode.Append,
                                     (x) =>
                                     {
-                                        reward.ItemName = reward.name;
+                                        reward.itemName = reward.name;
                                         reward.RewardType = (RewardType)x[0];
 
                                         EditorUtility.SetDirty(reward);

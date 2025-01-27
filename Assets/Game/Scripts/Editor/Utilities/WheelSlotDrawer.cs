@@ -27,8 +27,8 @@ public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
 
         if (item != null)
         {
-            texture = GUIHelper.GetAssetThumbnail(item.ItemSprite, typeof(WheelItem), true);
-            GUI.Label(rect.AddXMin(70).AlignMiddle(16), EditorGUI.showMixedValue ? "-" : item.ItemName);
+            texture = GUIHelper.GetAssetThumbnail(item.itemSprite, typeof(WheelItem), true);
+            GUI.Label(rect.AddXMin(70).AlignMiddle(16), EditorGUI.showMixedValue ? "-" : item.itemName);
         }
 
         EditorGUI.BeginChangeCheck();
@@ -63,12 +63,12 @@ public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
                 {
                     EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
-                    var rewardIcon = GUIHelper.GetAssetThumbnail(reward.ItemSprite, reward.GetType(), true);
+                    var rewardIcon = GUIHelper.GetAssetThumbnail(reward.itemSprite, reward.GetType(), true);
                     var iconRect = EditorGUILayout.GetControlRect(false, 40);
                     GUI.DrawTexture(iconRect.AlignLeft(40), rewardIcon, ScaleMode.ScaleToFit);
 
                     var labelRect = iconRect.AddXMin(45);
-                    GUI.Label(labelRect, reward.ItemName);
+                    GUI.Label(labelRect, reward.itemName);
 
                     if (reward is NumberBasedReward)
                     {

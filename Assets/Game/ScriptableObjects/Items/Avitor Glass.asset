@@ -26,3 +26,4 @@ MonoBehaviour:
   itemType: 0
   rewardsToGive:
   - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+  - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}

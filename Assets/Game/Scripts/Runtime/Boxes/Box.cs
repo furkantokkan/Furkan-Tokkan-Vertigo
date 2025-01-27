@@ -10,14 +10,8 @@ using Game.Boxes.Editor;
 
 namespace Game.Boxes
 {
-    public class Box : SerializedScriptableObject
+    public class Box : AbstractCollectable
     {
-        [BoxGroup("Box Visuals")]
-        [HorizontalGroup("Box Visuals/Row", Width = 75, MarginRight = 5)]
-        [PreviewField(75)]
-        [Title("Box Sprite")]
-        public Sprite boxSprite;
-
         [BoxGroup("Box Visuals")]
         [HorizontalGroup("Box Visuals/Row", Width = 75)]
         [PreviewField(75)]
@@ -59,11 +53,6 @@ namespace Game.Boxes
         [PreviewField(75)]
         [Title("Super")]
         public Sprite superIndicator;
-
-        [BoxGroup("Box Information")]
-        [Title("Box Details")]
-        [NameCheck(typeof(Box))]
-        public string boxName;
 
         [BoxGroup("Box Information")]
         [Title("Box Description")]
@@ -129,7 +118,14 @@ namespace Game.Boxes
         [SerializeField]
         private BoxEditorExtension editorExtension;
 
+        [ExecuteInEditMode]
         private void OnEnable()
+        {
+            editorExtension = new BoxEditorExtension(this);
+        }
+
+        [Button("Refresh Editor Extension")]
+        public void RefreshEditorExtension()
         {
             editorExtension = new BoxEditorExtension(this);
         }
@@ -146,7 +142,7 @@ namespace Game.Boxes
                 }
             }
 
-            Debug.Log($"Box '{boxName}' contents updated. Count: {contents.Count}");
+            Debug.Log($"Box '{itemName}' contents updated. Count: {contents.Count}");
         }
 #endif
     }

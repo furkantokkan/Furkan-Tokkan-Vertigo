@@ -120,7 +120,7 @@ namespace Game.UI.Wheel
                 ? currentSlots[index].GetValue<float>(item.rewardsToGive[0])
                 : 0;
 
-            slot.SetContent(item.ItemSprite, $"x{value:F0}");
+            slot.SetContent(item.itemSprite, $"x{value:F0}");
         }
 
         private void ExecuteSpinSequence(float targetAngle, Action onComplete)

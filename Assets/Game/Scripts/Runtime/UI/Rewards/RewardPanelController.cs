@@ -103,7 +103,7 @@ namespace Game.UI.Rewards
                 }
 
                 int displayAmount = Mathf.RoundToInt(rewardCounts[reward]);
-                poolManager.GetOrUpdateExisting(reward.ItemSprite, displayAmount);
+                poolManager.GetOrUpdateExisting(reward.itemSprite, displayAmount);
             }
         }
 

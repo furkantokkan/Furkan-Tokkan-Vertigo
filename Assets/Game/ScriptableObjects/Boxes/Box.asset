@@ -1,0 +1,878 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3987979213140071627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 5
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 5
+  description: 
+  waveIndex: 4
+  BoxContentItems:
+    slot1:
+      weight: 13.6
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,300975"}'
+    slot2:
+      weight: 13.6
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,922828"}'
+    slot3:
+      weight: 9.1
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot4:
+      weight: 12.5
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,966339"}'
+    slot5:
+      weight: 15.9
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,065416"}'
+    slot6:
+      weight: 14.8
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,34499"}'
+    slot7:
+      weight: 9.1
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,978734"}'
+    slot8:
+      weight: 11.4
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,367558"}'
+--- !u!114 &-3590382991380846228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 1
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 1
+  description: 
+  waveIndex: 0
+  BoxContentItems:
+    slot1:
+      weight: 10
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,192028"}'
+    slot2:
+      weight: 10
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,188265"}'
+    slot3:
+      weight: 10
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,351025"}'
+    slot4:
+      weight: 17.5
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,176548"}'
+    slot5:
+      weight: 10
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+      serializedRewardValues:
+      - '{"value":"4,961471"}'
+    slot6:
+      weight: 15
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,847318"}'
+    slot7:
+      weight: 17.5
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot8:
+      weight: 10
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,97529"}'
+--- !u!114 &-2853709666593103210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 2
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 2
+  description: 
+  waveIndex: 1
+  BoxContentItems:
+    slot1:
+      weight: 16.3
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+      serializedRewardValues:
+      - '{"value":"4,228372"}'
+    slot2:
+      weight: 9.3
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot3:
+      weight: 17.4
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"2,949599"}'
+    slot4:
+      weight: 9.3
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,133628"}'
+    slot5:
+      weight: 10.5
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+      serializedRewardValues:
+      - '{"value":"5,498506"}'
+    slot6:
+      weight: 9.3
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,673974"}'
+    slot7:
+      weight: 14
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,457561"}'
+    slot8:
+      weight: 14
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"2,173068"}'
+--- !u!114 &-1686831421444603858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 8
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 8
+  description: 
+  waveIndex: 7
+  BoxContentItems:
+    slot1:
+      weight: 14.3
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,785976"}'
+    slot2:
+      weight: 10.2
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,420429"}'
+    slot3:
+      weight: 11.2
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot4:
+      weight: 14.3
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,912405"}'
+    slot5:
+      weight: 14.3
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"2,010107"}'
+    slot6:
+      weight: 9.2
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,782892"}'
+    slot7:
+      weight: 15.3
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+      serializedRewardValues:
+      - '{"value":"5,763592"}'
+    slot8:
+      weight: 11.2
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+      serializedRewardValues:
+      - '{"value":"5,738785"}'
+--- !u!114 &-1560369739652172229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 9
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 9
+  description: 
+  waveIndex: 8
+  BoxContentItems:
+    slot1:
+      weight: 15.9
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,818632"}'
+    slot2:
+      weight: 15.9
+      item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,877833"}'
+    slot3:
+      weight: 10.2
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,872698"}'
+    slot4:
+      weight: 12.5
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"9,187686"}'
+    slot5:
+      weight: 13.6
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"2,266258"}'
+    slot6:
+      weight: 9.1
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,413495"}'
+    slot7:
+      weight: 11.4
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot8:
+      weight: 11.4
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,638271"}'
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d6b1b14ba5a2c458c0c6e844c8c76c, type: 3}
+  m_Name: Box
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: editorExtension
+      Entry: 7
+      Data: 0|Game.Boxes.Editor.BoxEditorExtension, Game.Boxes
+    - Name: normalWaveRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: safeWaveRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 4
+      Data: 150
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: superWaveRange
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 50
+    - Name: 
+      Entry: 4
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  itemSprite: {fileID: 21300000, guid: d28679d6ba4402749ac8f801c99d322a, type: 3}
+  itemName: Box
+  background: {fileID: 21300000, guid: 45979eb2815421b4881718b52c092ede, type: 3}
+  defaultWheel: {fileID: 21300000, guid: 222b0ac8627f1374aaa7f9c3235cfd24, type: 3}
+  safeWheel: {fileID: 21300000, guid: dd4de93eb58082d44aefa92e952fb9e3, type: 3}
+  superWheel: {fileID: 21300000, guid: 60b8fdcf4588ef641ad2a10d2c2116d8, type: 3}
+  defaultIndicator: {fileID: 21300000, guid: 1a8aaba80c8ab114990636763053f4b9, type: 3}
+  safeIndicator: {fileID: 21300000, guid: 66db8b550a8dfd64b91c885ec317e3e8, type: 3}
+  superIndicator: {fileID: 21300000, guid: 1a8aaba80c8ab114990636763053f4b9, type: 3}
+  description: asdasdasd
+  contents:
+  - {fileID: -3590382991380846228}
+  - {fileID: -2853709666593103210}
+  - {fileID: 2609701723852908647}
+  - {fileID: 706448596576457071}
+  - {fileID: -3987979213140071627}
+  - {fileID: 2601443379634902613}
+  - {fileID: 7765596130575264853}
+  - {fileID: -1686831421444603858}
+  - {fileID: -1560369739652172229}
+  - {fileID: 9094805802859902316}
+--- !u!114 &706448596576457071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 4
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 4
+  description: 
+  waveIndex: 3
+  BoxContentItems:
+    slot1:
+      weight: 14.6
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,919982"}'
+    slot2:
+      weight: 9
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,483522"}'
+    slot3:
+      weight: 11.2
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,922508"}'
+    slot4:
+      weight: 9
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,941754"}'
+    slot5:
+      weight: 11.2
+      item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,715815"}'
+    slot6:
+      weight: 14.6
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot7:
+      weight: 13.5
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,771814"}'
+    slot8:
+      weight: 16.9
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,609508"}'
+--- !u!114 &2601443379634902613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 6
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 6
+  description: 
+  waveIndex: 5
+  BoxContentItems:
+    slot1:
+      weight: 9.2
+      item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,637438"}'
+    slot2:
+      weight: 16.1
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"15,30637"}'
+    slot3:
+      weight: 11.5
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
+      serializedRewardValues:
+      - '{"value":"10,38253"}'
+    slot4:
+      weight: 14.9
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"11,7355"}'
+    slot5:
+      weight: 9.2
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"10,08062"}'
+    slot6:
+      weight: 12.6
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"4,306165"}'
+    slot7:
+      weight: 10.3
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"18,58295"}'
+    slot8:
+      weight: 16.1
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"10,77769"}'
+--- !u!114 &2609701723852908647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 3
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 3
+  description: 
+  waveIndex: 2
+  BoxContentItems:
+    slot1:
+      weight: 17
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,252443"}'
+    slot2:
+      weight: 12.5
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"3,185577"}'
+    slot3:
+      weight: 9.1
+      item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,152832"}'
+    slot4:
+      weight: 9.1
+      item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"8,199524"}'
+    slot5:
+      weight: 9.1
+      item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,318496"}'
+    slot6:
+      weight: 10.2
+      item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"5,207186"}'
+    slot7:
+      weight: 15.9
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot8:
+      weight: 17
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,095705"}'
+--- !u!114 &7765596130575264853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 7
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 7
+  description: 
+  waveIndex: 6
+  BoxContentItems:
+    slot1:
+      weight: 11.1
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+      serializedRewardValues:
+      - '{"value":"4,936846"}'
+    slot2:
+      weight: 15.2
+      item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,378623"}'
+    slot3:
+      weight: 15.2
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"1,96728"}'
+    slot4:
+      weight: 15.2
+      item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,80695"}'
+    slot5:
+      weight: 10.1
+      item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+      serializedRewardValues:
+      - '{"value":"2,788354"}'
+    slot6:
+      weight: 11.1
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+      serializedRewardValues:
+      - '{"value":"4,917971"}'
+    slot7:
+      weight: 11.1
+      item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
+      serializedRewardValues:
+      - '{"value":"5,062076"}'
+    slot8:
+      weight: 11.1
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+--- !u!114 &9094805802859902316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0a913b7c8a8c24aa6544bf82bfec6e, type: 3}
+  m_Name: Box Content 10
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  contentName: Box Content 10
+  description: 
+  waveIndex: 9
+  BoxContentItems:
+    slot1:
+      weight: 9.6
+      item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"9,615584"}'
+    slot2:
+      weight: 13.8
+      item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"9,11453"}'
+    slot3:
+      weight: 16
+      item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+      serializedRewardValues:
+      - '{"value":"2,07151"}'
+    slot4:
+      weight: 11.7
+      item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+      serializedRewardValues:
+      - '{"value":"7,185252"}'
+    slot5:
+      weight: 9.6
+      item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,813787"}'
+    slot6:
+      weight: 10.6
+      item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+      serializedRewardValues:
+      - '{"value":"4,635708"}'
+    slot7:
+      weight: 12.8
+      item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
+      serializedRewardKeys: []
+      serializedRewardValues: []
+    slot8:
+      weight: 16
+      item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
+      serializedRewardKeys:
+      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+      serializedRewardValues:
+      - '{"value":"6,369752"}'

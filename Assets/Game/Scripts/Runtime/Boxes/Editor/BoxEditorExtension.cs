@@ -26,7 +26,7 @@ namespace Game.Boxes.Editor
         [SerializeField] private Vector2 superWaveRange = new Vector2(50f, 200f);
 
         private Box box;
-        private string boxName => box.boxName;
+        private string boxName => box.itemName;
         private List<BoxContent> contents => box.contents;
 
         public BoxEditorExtension(Box box)

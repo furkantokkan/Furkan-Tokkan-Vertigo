@@ -8,71 +8,27 @@ using System.Collections.Generic;
 using System;
 
 [assembly: RegisterValidator(typeof(NameValidator))]
-public class NameValidator : AttributeValidator<NameCheckAttribute, string>
+
+public class NameValidator : AbstractValidator<NameCheckAttribute, string>
 {
     private static readonly Dictionary<Type, INameHandler> nameHandlers = new Dictionary<Type, INameHandler>
     {
-        { typeof(Box), new BoxNameHandler() },
         { typeof(AbstractCollectable), new CollectableNameHandler() }
     };
 
-    protected override void Validate(ValidationResult result)
+    protected override Type ValidationType => Attribute?.type;
+
+    protected override void ValidateTarget(ValidationResult result, ScriptableObject target)
     {
-        if (!ValidateSetup(result))
+        if (!nameHandlers.ContainsKey(ValidationType))
         {
+            result.AddError($"No name handler found for type: {ValidationType}");
             return;
         }
 
-        var targetObject = GetTargetObject();
-        if (targetObject == null)
-        {
-            result.AddError("Cannot find target object");
-            return;
-        }
-
-        ValidateName(result, targetObject);
-    }
-
-    private bool ValidateSetup(ValidationResult result)
-    {
-        if (result == null || Property == null || Attribute == null)
-        {
-            Debug.LogError("Validation components are null");
-            return false;
-        }
-
-        if (!nameHandlers.ContainsKey(Attribute.type))
-        {
-            Debug.LogError($"No name handler found for type: {Attribute.type}");
-            return false;
-        }
-
-        return true;
-    }
-
-    private ScriptableObject GetTargetObject()
-    {
         try
         {
-            if (Property?.Tree?.WeakTargets == null || Property.Tree.WeakTargets.Count == 0)
-            {
-                return null;
-            }
-
-            return Property.Tree.WeakTargets[0] as ScriptableObject;
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError($"Error getting target object: {ex.Message}");
-            return null;
-        }
-    }
-
-    private void ValidateName(ValidationResult result, ScriptableObject target)
-    {
-        try
-        {
-            var handler = nameHandlers[Attribute.type];
+            var handler = nameHandlers[ValidationType];
             string currentName = handler.GetName(target);
 
             if (string.IsNullOrEmpty(currentName))
@@ -88,7 +44,7 @@ public class NameValidator : AttributeValidator<NameCheckAttribute, string>
         }
         catch (Exception ex)
         {
-            Debug.LogError($"Error validating name: {ex.Message}");
+            result.AddError($"Error validating name: {ex.Message}");
         }
     }
 
@@ -125,56 +81,19 @@ public class NameValidator : AttributeValidator<NameCheckAttribute, string>
             });
     }
 
-    private void RenameAsset(ScriptableObject obj, string newName)
-    {
-        string assetPath = AssetDatabase.GetAssetPath(obj);
-        if (!string.IsNullOrEmpty(assetPath))
-        {
-            AssetDatabase.RenameAsset(assetPath, newName);
-            SaveChanges(obj);
-        }
-    }
-
-    private void SaveChanges(UnityEngine.Object obj)
-    {
-        EditorUtility.SetDirty(obj);
-        AssetDatabase.SaveAssets();
-    }
-
     public interface INameHandler
     {
         string GetName(ScriptableObject obj);
         void SetName(ScriptableObject obj, string newName);
     }
 
-    class BoxNameHandler : INameHandler
+    private class CollectableNameHandler : INameHandler
     {
-        public string GetName(ScriptableObject obj)
-        {
-            return (obj as Box)?.boxName;
-        }
-
-        public void SetName(ScriptableObject obj, string newName)
-        {
-            if (obj is Box box)
-            {
-                box.boxName = newName;
-            }
-        }
-    }
-    class CollectableNameHandler : INameHandler
-    {
-        public string GetName(ScriptableObject obj)
-        {
-            return (obj as AbstractCollectable)?.ItemName;
-        }
-
+        public string GetName(ScriptableObject obj) => (obj as AbstractCollectable)?.itemName;
         public void SetName(ScriptableObject obj, string newName)
         {
             if (obj is AbstractCollectable collectable)
-            {
-                collectable.ItemName = newName;
-            }
+                collectable.itemName = newName;
         }
     }
 }

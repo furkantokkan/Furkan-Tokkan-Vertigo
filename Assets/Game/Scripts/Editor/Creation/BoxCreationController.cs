@@ -59,7 +59,7 @@ namespace Game.Editor
                 string path = EditorConst.BOX_PATH;
                 CreateWithFilePanel<Box>(title, path, (x) => 
                 {
-                    x.boxName = x.name;
+                    x.itemName = x.name;
                 });
             }
         }
@@ -77,7 +77,7 @@ namespace Game.Editor
                 for (int i = 0; i < count; i++)
                 {
                     BoxContent newContent = ScriptableObject.CreateInstance<BoxContent>();
-                    string newContentName = $"{clickedBox.boxName} Content {clickedBox.contents.Count + 1}";
+                    string newContentName = $"{clickedBox.itemName} Content {clickedBox.contents.Count + 1}";
                     newContent.name = newContentName;
                     newContent.contentName = newContentName;
                     newContent.description = string.Empty;
@@ -92,7 +92,7 @@ namespace Game.Editor
                 EditorUtility.FocusProjectWindow();
                 Selection.activeObject = clickedBox;
 
-                Debug.Log($"{count} new BoxContent(s) added to '{clickedBox.boxName}'.");
+                Debug.Log($"{count} new BoxContent(s) added to '{clickedBox.itemName}'.");
             }
 
             InputDialogWindow.ShowWindow(WindowConfirm);
@@ -107,7 +107,7 @@ namespace Game.Editor
             {
                 string path = AssetDatabase.GetAssetPath(box);
                 AssetDatabase.DeleteAsset(path);
-                Debug.Log($"Box '{box.boxName}' removed.");
+                Debug.Log($"Box '{box.itemName}' removed.");
             }
             else if (selected.Value is BoxContent boxContent)
             {
@@ -118,7 +118,7 @@ namespace Game.Editor
                     AssetDatabase.RemoveObjectFromAsset(boxContent);
                     EditorUtility.SetDirty(parentBox);
                     AssetDatabase.SaveAssets();
-                    Debug.Log($"BoxContent '{boxContent.contentName}' removed from '{parentBox.boxName}'.");
+                    Debug.Log($"BoxContent '{boxContent.contentName}' removed from '{parentBox.itemName}'.");
                 }
             }
 
@@ -138,7 +138,7 @@ namespace Game.Editor
             }
             EditorUtility.SetDirty(box);
             AssetDatabase.SaveAssets();
-            Debug.Log($"All BoxContents removed from '{box.boxName}'.");
+            Debug.Log($"All BoxContents removed from '{box.itemName}'.");
         }
 
         public void RemoveAllBoxes()
