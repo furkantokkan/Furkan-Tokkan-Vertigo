@@ -137,7 +137,7 @@ public class WheelSlot : ISerializationCallbackReceiver
 
         if (value is int intValue)
         {
-            instanceValues[reward] = (float)intValue;
+            instanceValues[reward] = intValue;
         }
         else if (value is float floatValue)
         {
