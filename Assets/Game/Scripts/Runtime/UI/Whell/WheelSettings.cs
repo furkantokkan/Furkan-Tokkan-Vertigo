@@ -51,9 +51,6 @@ namespace Game.UI.Wheel
         {
             if (slotDistance < 100)
                 slotDistance = 100f;
-
-            if (textScale <= 0)
-                textScale = 0.1f;
         }
     }
 }
