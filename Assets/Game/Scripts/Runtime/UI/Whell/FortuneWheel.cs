@@ -1,5 +1,6 @@
 using DG.Tweening;
 using Game.Boxes;
+using Game.Utilities;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -12,7 +13,7 @@ namespace Game.UI.Wheel
     {
         private readonly Transform wheelTransform;
         private readonly WheelSettings settings;
-        private readonly WheelPoolManager poolManager;
+        private readonly ObjectPoolManager<WheelObject> poolManager;
         private readonly List<WheelObject> activeSlots;
 
         private BoxContent currentContent;
@@ -28,7 +29,7 @@ namespace Game.UI.Wheel
             this.wheelTransform = wheelTransform;
             this.settings = settings;
             this.activeSlots = new List<WheelObject>();
-            this.poolManager = new WheelPoolManager(settings.SlotPrefab);
+            this.poolManager = new ObjectPoolManager<WheelObject>(settings.SlotPrefab);
         }
 
         public void Initialize()

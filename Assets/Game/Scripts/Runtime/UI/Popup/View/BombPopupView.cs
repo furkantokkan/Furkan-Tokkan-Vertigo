@@ -42,11 +42,6 @@ namespace Game.UI
             transform.DOScale(1f, 0.3f).SetEase(Ease.OutBack);
         }
 
-        protected override void OnPopupClosed()
-        {
-            base.OnPopupClosed();
-        }
-
         private void OnDestroy()
         {
             giveUpButton.onClick.RemoveAllListeners();

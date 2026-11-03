@@ -1,4 +1,3 @@
-using Game.UI.Popup;
 using System.Collections;
 using System.Collections.Generic;
 using UniRx;
@@ -54,14 +53,16 @@ namespace Game.UI
         private void HandleRewardMessage(RewardGivenMessage message)
         {
             if (bombPopup.gameObject.activeInHierarchy) return;
-            rewardPopup.SetContent(message.Title, message.Message, message.Slot.item.itemSprite);
+
+            var item = message.Slot.item;
+            rewardPopup.SetContent($"Reward: {item.itemName}", $"You got {item.itemName} in Wave {message.CurrentWave}", item.itemSprite);
             rewardPopup.Show();
         }
 
         private void HandleBombMessage(BombGivenMessage message)
         {
             if (rewardPopup.gameObject.activeInHierarchy) return;
-            bombPopup.SetContent(message.Title, message.Message);
+            bombPopup.SetContent("Game Over!", "You got the bomb!");
             bombPopup.Show();
         }
 

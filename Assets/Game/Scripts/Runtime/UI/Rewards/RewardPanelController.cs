@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Game.Collectable;
 using Game.Editor;
-using Game.UI.Popup;
 using Game.Utilities;
 using UniRx;
 using UnityEngine;
@@ -18,6 +17,7 @@ namespace Game.UI.Rewards
 
         private RewardItemPoolManager poolManager;
         private readonly Dictionary<AbstractReward, int> rewardCounts = new Dictionary<AbstractReward, int>();
+        private readonly GoldWallet goldWallet = new GoldWallet();
         private readonly CompositeDisposable disposables = new CompositeDisposable();
 
         private void Awake()
@@ -70,12 +70,8 @@ namespace Game.UI.Rewards
                 var reward = kvp.Key;
                 if (reward != null && reward.RewardType == RewardType.GoldPoint)
                 {
-                    int currentGold = PlayerPrefs.GetInt(GameConst.GOLD_KEY, 0);
-                    int newGold = currentGold + kvp.Value;
-                    PlayerPrefs.SetInt(GameConst.GOLD_KEY, newGold);
-                    PlayerPrefs.Save();
-
-                    Debug.Log($"Saved Gold: {newGold} (Previous: {currentGold}, Added: {kvp.Value})");
+                    goldWallet.Add(kvp.Value);
+                    Debug.Log($"Saved Gold: {goldWallet.Gold} (Added: {kvp.Value})");
                     break;
                 }
             }

@@ -1,5 +1,3 @@
-using Game.Collectable;
-using Game.UI.Popup;
 using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
@@ -11,21 +9,21 @@ namespace Game.UI.Wheel
     {
         [Header("Settings")]
         [SerializeField] private WheelSettings settings;
-        [SerializeField] private Button spinButton; 
+        [SerializeField] private Button spinButton;
         [SerializeField] private Transform wheelTransform;
         [SerializeField] private Transform wheelIndicator;
-        
+
         private Image wheelImage;
-        private Image wheelIndicatorImage; 
+        private Image wheelIndicatorImage;
 
         private IFortuneWheel fortuneWheel;
-        
-        private int currentWave = 0;
-        
+        private WheelSession session;
+
         private readonly CompositeDisposable disposables = new CompositeDisposable();
 
         private void Awake()
         {
+            session = new WheelSession(settings.Box, MessageBroker.Default);
             fortuneWheel = new FortuneWheel(wheelTransform, settings);
             wheelImage = wheelTransform.GetComponent<Image>();
             wheelIndicatorImage = wheelIndicator.GetComponent<Image>();
@@ -35,17 +33,19 @@ namespace Game.UI.Wheel
         private void OnEnable()
         {
             fortuneWheel.Initialize();
-            fortuneWheel.UpdateVisuals(currentWave);
+            ShowCurrentWave();
             SubscribeToEvents();
-            CheckAndPublishWaveType();
         }
         private void OnValidate()
         {
             spinButton = GetComponentInChildren<Button>();
         }
-        private void OnDestroy()
+        private void OnDisable()
         {
             disposables.Clear();
+        }
+        private void OnDestroy()
+        {
             fortuneWheel.Clear();
         }
         private void SubscribeToEvents()
@@ -64,34 +64,18 @@ namespace Game.UI.Wheel
         }
         private void ShowCurrentWave()
         {
-            fortuneWheel.UpdateVisuals(currentWave);
-            CheckAndPublishWaveType();
+            fortuneWheel.UpdateVisuals(session.CurrentWave);
+
+            var visuals = settings.GetVisuals(session.CurrentContent.WaveType);
+            wheelImage.sprite = visuals.wheel;
+            wheelIndicatorImage.sprite = visuals.indicator;
         }
         private void ResetGame()
         {
-            currentWave = 0;
+            session.Reset();
             fortuneWheel.Clear();
             fortuneWheel.Initialize();
-            fortuneWheel.UpdateVisuals(currentWave);
-            CheckAndPublishWaveType();
-        }
-        private void CheckAndPublishWaveType()
-        {
-            var content = settings.Box.contents[currentWave];
-            var waveType = content.isSuperBox ? WaveType.Super
-                : content.isSafeBox ? WaveType.Safe
-                : WaveType.Normal;
-
-            MessageBroker.Default.Publish(new WaveTypeChangedMessage(waveType));
-
-            var visuals = settings.GetVisuals(waveType);
-            SetIndicatorAndWheel(visuals.wheel, visuals.indicator);
-        }
-
-        private void SetIndicatorAndWheel(Sprite wheel, Sprite indicator)
-        {
-            wheelImage.sprite = wheel;
-            wheelIndicatorImage.sprite = indicator;
+            ShowCurrentWave();
         }
 
         [Button("Spin Wheel", ButtonSizes.Medium)]
@@ -99,28 +83,14 @@ namespace Game.UI.Wheel
         {
             if (fortuneWheel.IsSpinning) return;
 
-            var selectedWheelSlot = settings.Box.GetReward(currentWave);
-            if (selectedWheelSlot == null || selectedWheelSlot.item == null) return;
+            var selectedSlot = session.PickSlot();
+            if (selectedSlot == null) return;
 
-            fortuneWheel.Spin(selectedWheelSlot, () =>
+            fortuneWheel.Spin(selectedSlot, () =>
             {
-                SendReward(selectedWheelSlot);
-                currentWave++;
-                fortuneWheel.UpdateVisuals(currentWave);
-                CheckAndPublishWaveType();
+                session.CompleteSpin(selectedSlot);
+                ShowCurrentWave();
             });
-        }
-
-        private void SendReward(WheelSlot wheelSlot)
-        {
-            if (wheelSlot.item.ItemType == ItemType.Bomb)
-            {
-                MessageBroker.Default.Publish(new BombGivenMessage(wheelSlot.item, currentWave));
-            }
-            else
-            {
-                MessageBroker.Default.Publish(new RewardGivenMessage(wheelSlot, currentWave));
-            }
         }
 
 #if UNITY_EDITOR

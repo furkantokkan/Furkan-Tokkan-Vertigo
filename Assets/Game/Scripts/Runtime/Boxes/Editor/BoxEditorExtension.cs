@@ -82,7 +82,7 @@ namespace Game.Boxes.Editor
 
         private void RandomizeContent(BoxContent content)
         {
-            bool isSafeOrSuper = content.isSafeBox || content.isSuperBox;
+            bool isSafeOrSuper = content.WaveType != WaveType.Normal;
             var (bombItem, normalItems) = GetItems();
 
             if (!ValidateItems(bombItem, normalItems, isSafeOrSuper)) return;
@@ -162,8 +162,8 @@ namespace Game.Boxes.Editor
 
         private Vector2 GetWaveRange(BoxContent content)
         {
-            if (content.isSuperBox) return superWaveRange;
-            if (content.isSafeBox) return safeWaveRange;
+            if (content.WaveType == WaveType.Super) return superWaveRange;
+            if (content.WaveType == WaveType.Safe) return safeWaveRange;
             return normalWaveRange;
         }
         private void FillNormalSlots(WheelSlot[] slots, List<WheelItem> normalItems, System.Random random, Vector2 range)

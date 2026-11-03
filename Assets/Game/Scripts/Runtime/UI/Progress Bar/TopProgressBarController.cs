@@ -1,6 +1,6 @@
+using Game.Boxes;
 using Game.UI.Progressbar;
 using Game.UI;
-using Game.UI.Popup;
 using Game.UI.Wheel;
 using Game.Utilities;
 using Sirenix.OdinInspector;
@@ -54,10 +54,11 @@ namespace Game.UI.Progressbar
             progressImage.color = normalColor;
         }
 
-        private void Reset()
+        private void ResetBar()
         {
             currentWave = 1;
             progressBar.Stop();
+            waveController.Stop();
             ResetProgressBar();
             waveController.SetupInitialWaves(currentWave);
         }
@@ -90,17 +91,22 @@ namespace Game.UI.Progressbar
 
             MessageBroker.Default
                 .Receive<GameOverMessage>()
-                .Subscribe(_ => Reset())
+                .Subscribe(_ => ResetBar())
                 .AddTo(disposables);
 
             MessageBroker.Default
                 .Receive<RewardGivenMessage>()
-                .Subscribe(OnRewardGiven)
+                .Subscribe(message => OnWaveCompleted(message.CurrentWave))
+                .AddTo(disposables);
+
+            MessageBroker.Default
+                .Receive<BombGivenMessage>()
+                .Subscribe(message => OnWaveCompleted(message.CurrentWave))
                 .AddTo(disposables);
         }
-        private void OnRewardGiven(RewardGivenMessage message)
+        private void OnWaveCompleted(int completedWave)
         {
-            currentWave = message.CurrentWave;
+            currentWave = completedWave;
             AdvanceWave();
         }
 
@@ -166,7 +172,7 @@ namespace Game.UI.Progressbar
         [Button("Reset Wave")]
         private void DebugResetWave()
         {
-            Reset();
+            ResetBar();
         }
 #endif
     }

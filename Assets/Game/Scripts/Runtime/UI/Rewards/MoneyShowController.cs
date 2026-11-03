@@ -9,6 +9,7 @@ namespace Game.UI.Rewards
     public class MoneyShowController : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI moneyText;
+        private readonly GoldWallet goldWallet = new GoldWallet();
         private readonly CompositeDisposable disposables = new CompositeDisposable();
 
         private void Awake()
@@ -17,22 +18,13 @@ namespace Game.UI.Rewards
 
             MessageBroker.Default
                 .Receive<GameOverMessage>()
-                .Subscribe(_ => SaveAndUpdateMoney())
+                .Subscribe(_ => UpdateMoneyDisplay())
                 .AddTo(disposables);
         }
 
         private void UpdateMoneyDisplay()
         {
-            int currentMoney = PlayerPrefs.GetInt(GameConst.GOLD_KEY, 0);
-            moneyText.text = currentMoney.ToString();
-        }
-
-        private void SaveAndUpdateMoney()
-        {
-            int currentMoney = PlayerPrefs.GetInt(GameConst.GOLD_KEY, 0);
-            PlayerPrefs.SetInt(GameConst.GOLD_KEY, currentMoney);
-            PlayerPrefs.Save();
-            UpdateMoneyDisplay();
+            moneyText.text = goldWallet.Gold.ToString();
         }
 
         private void OnDestroy()

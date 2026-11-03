@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace Game.UI
 {
-    public class PopupView : MonoBehaviour, IPopupView
+    public class PopupView : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI titleText;
         [SerializeField] private TextMeshProUGUI messageText;

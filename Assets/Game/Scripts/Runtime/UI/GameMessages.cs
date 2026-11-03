@@ -1,14 +1,35 @@
+using Game.Boxes;
+using Game.Collectable;
+
 namespace Game.UI
 {
     // UniRx MessageBroker routes messages by type, so each game event is its own type.
     // Publish(new GameOverMessage()) and Receive<GameOverMessage>() are checked by the compiler.
+    // Messages carry data only; whoever shows them decides the text.
     // A server payload carries enum names as strings (ToString / Enum.TryParse), never their numbers.
 
-    public enum WaveType
+    public readonly struct RewardGivenMessage
     {
-        Normal,
-        Safe,
-        Super
+        public readonly WheelSlot Slot;
+        public readonly int CurrentWave;
+
+        public RewardGivenMessage(WheelSlot slot, int currentWave)
+        {
+            Slot = slot;
+            CurrentWave = currentWave;
+        }
+    }
+
+    public readonly struct BombGivenMessage
+    {
+        public readonly WheelItem Item;
+        public readonly int CurrentWave;
+
+        public BombGivenMessage(WheelItem item, int currentWave)
+        {
+            Item = item;
+            CurrentWave = currentWave;
+        }
     }
 
     public readonly struct WaveTypeChangedMessage
