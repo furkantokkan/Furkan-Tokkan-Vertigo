@@ -1,4 +1,3 @@
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 [System.Serializable]
@@ -6,7 +5,6 @@ public class BoxContentItems
 {
     private const int DEFAULT_SLOT_COUNT = 8;
 
-    [ListDrawerSettings(ShowIndexLabels = true)]
     [SerializeField]
     private WheelSlot[] slots = CreateDefaultSlots();
 

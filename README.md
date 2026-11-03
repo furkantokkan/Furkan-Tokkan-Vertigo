@@ -46,7 +46,7 @@ The wheel reads its settings from `Assets/Game/Resources/WheelSettings.asset`: t
 | Area | What you can do |
 | --- | --- |
 | Boxes | Create a box, add any number of waves (`BoxContent`), remove waves or whole boxes. **Randomize All Contents** fills every wave from the item list with per-wave-type value ranges; **Equalize All Weights** spreads the probability evenly. |
-| Waves | Each wave is a list of wheel slots. Add, remove or drag slots to change how many the wheel shows. Every slot has an item, a weight and a whole-number amount for each of the item's rewards. |
+| Waves | Each wave shows its name, index and type (normal, safe, super) above a grid of slot cards. Add or remove cards to change how many slots the wheel shows; each card has an item, a weight and a whole-number amount for each of the item's rewards. |
 | Items | Create wheel items or a bomb. The `ItemType` enum is regenerated automatically, and the item stores its type as the enum name (picked from a dropdown). |
 | Rewards | Create rewards through a type picker. The `RewardType` enum is regenerated automatically, and the reward stores its type as the enum name. |
 | Validation | An Odin validator keeps each asset's file name equal to its item name and offers a one-click fix. |

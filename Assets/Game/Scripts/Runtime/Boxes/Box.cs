@@ -25,7 +25,7 @@ namespace Game.Boxes
 
         [BoxGroup("Contents")]
         [Searchable]
-        [TableList(ShowIndexLabels = true)]
+        [TableList(ShowIndexLabels = true, DrawScrollView = false, ShowPaging = true, NumberOfItemsPerPage = 5)]
         [ListDrawerSettings(ShowFoldout = true)]
         [InfoBox("Add box contents here. Each content represents a wave.", InfoMessageType.Info)]
         [SerializeField]

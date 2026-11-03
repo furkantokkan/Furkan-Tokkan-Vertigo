@@ -7,93 +7,84 @@ using UnityEngine;
 
 public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
 {
-    private bool showRewards;
+    private const float PREVIEW_SIZE = 48f;
+    private const float AMOUNT_WIDTH = 56f;
+    private const float WEIGHT_LABEL_WIDTH = 48f;
 
     protected override void DrawPropertyLayout(GUIContent label)
     {
-        var rect = EditorGUILayout.GetControlRect(label != null, 65);
+        var slot = this.ValueEntry.SmartValue;
+        var item = slot.item;
+        int rewardCount = item != null ? item.rewardsToGive.Count : 0;
 
-        if (label != null)
+        float lineHeight = EditorGUIUtility.singleLineHeight;
+        float lineStep = lineHeight + EditorGUIUtility.standardVerticalSpacing;
+        var rect = EditorGUILayout.GetControlRect(false, Mathf.Max(PREVIEW_SIZE, (2 + rewardCount) * lineStep));
+
+        DrawItemField(rect.AlignLeft(PREVIEW_SIZE).AlignTop(PREVIEW_SIZE), slot);
+
+        var line = rect.AddXMin(PREVIEW_SIZE + 6).AlignTop(lineHeight);
+        GUI.Label(line, item != null ? item.itemName : "Empty slot", item != null ? EditorStyles.boldLabel : EditorStyles.miniLabel);
+
+        using (new EditorGUI.DisabledScope(item == null))
         {
-            rect.xMin = EditorGUI.PrefixLabel(rect.AlignCenterY(15), label).xMin;
-        }
-        else
-        {
-            rect = EditorGUI.IndentedRect(rect);
+            DrawWeightField(line.AddY(lineStep), slot);
         }
 
-        WheelItem item = this.ValueEntry.SmartValue.item;
-        Texture texture = null;
-
-        if (item != null)
+        for (int i = 0; i < rewardCount; i++)
         {
-            texture = GUIHelper.GetAssetThumbnail(item.itemSprite, typeof(WheelItem), true);
-            GUI.Label(rect.AddXMin(70).AlignMiddle(16), EditorGUI.showMixedValue ? "-" : item.itemName);
+            DrawRewardAmount(line.AddY(lineStep * (2 + i)), slot, item.rewardsToGive[i]);
         }
+    }
+
+    private void DrawItemField(Rect rect, WheelSlot slot)
+    {
+        var texture = slot.item != null ? GUIHelper.GetAssetThumbnail(slot.item.itemSprite, typeof(WheelItem), true) : null;
 
         EditorGUI.BeginChangeCheck();
-        var newItem = SirenixEditorFields.UnityPreviewObjectField(rect.AlignLeft(65), item, texture, typeof(WheelItem)) as WheelItem;
+        var newItem = SirenixEditorFields.UnityPreviewObjectField(rect, slot.item, texture, typeof(WheelItem)) as WheelItem;
         if (EditorGUI.EndChangeCheck())
         {
-            var value = this.ValueEntry.SmartValue;
-            value.item = newItem;
-            value.weight = newItem != null ? 16.67f : 0f;
-            value.ValidateRewards();
+            slot.item = newItem;
+            slot.weight = newItem != null ? 16.67f : 0f;
+            slot.ValidateRewards();
+            this.ValueEntry.Values.ForceMarkDirty();
+        }
+    }
+
+    private void DrawWeightField(Rect rect, WheelSlot slot)
+    {
+        float labelWidth = EditorGUIUtility.labelWidth;
+        EditorGUIUtility.labelWidth = WEIGHT_LABEL_WIDTH;
+
+        EditorGUI.BeginChangeCheck();
+        float newWeight = EditorGUI.Slider(rect, "Weight", slot.weight, 0, 100);
+        if (EditorGUI.EndChangeCheck())
+        {
+            slot.weight = newWeight;
             this.ValueEntry.Values.ForceMarkDirty();
         }
 
-        var weightRect = EditorGUILayout.GetControlRect(false, 20);
+        EditorGUIUtility.labelWidth = labelWidth;
+    }
+
+    private void DrawRewardAmount(Rect rect, WheelSlot slot, AbstractReward reward)
+    {
+        if (reward == null) return;
+
+        var icon = GUIHelper.GetAssetThumbnail(reward.itemSprite, reward.GetType(), true);
+        if (icon != null)
+            GUI.DrawTexture(rect.AlignLeft(rect.height), icon, ScaleMode.ScaleToFit);
+
+        string tooltip = reward is NumberBasedReward numberReward ? $"Base value: {numberReward.BaseValue}" : string.Empty;
+        GUI.Label(rect.AddXMin(rect.height + 4).SubXMax(AMOUNT_WIDTH + 4), new GUIContent(reward.itemName, tooltip));
+
         EditorGUI.BeginChangeCheck();
-        var newWeight = EditorGUI.Slider(weightRect, "Weight", this.ValueEntry.SmartValue.weight, 0, 100);
+        int newAmount = EditorGUI.IntField(rect.AlignRight(AMOUNT_WIDTH), slot.GetAmount(reward));
         if (EditorGUI.EndChangeCheck())
         {
-            var value = this.ValueEntry.SmartValue;
-            value.weight = newWeight;
+            slot.SetAmount(reward, newAmount);
             this.ValueEntry.Values.ForceMarkDirty();
-        }
-
-        if (item != null && item.rewardsToGive.Count > 0)
-        {
-            showRewards = EditorGUILayout.Foldout(showRewards, "Rewards");
-            if (showRewards)
-            {
-                EditorGUI.indentLevel++;
-
-                foreach (var reward in item.rewardsToGive)
-                {
-                    EditorGUILayout.BeginVertical(EditorStyles.helpBox);
-
-                    var rewardIcon = GUIHelper.GetAssetThumbnail(reward.itemSprite, reward.GetType(), true);
-                    var iconRect = EditorGUILayout.GetControlRect(false, 40);
-                    GUI.DrawTexture(iconRect.AlignLeft(40), rewardIcon, ScaleMode.ScaleToFit);
-
-                    var labelRect = iconRect.AddXMin(45);
-                    GUI.Label(labelRect, reward.itemName);
-
-                    if (reward is NumberBasedReward)
-                    {
-                        EditorGUI.BeginChangeCheck();
-                        var currentValue = this.ValueEntry.SmartValue.GetAmount(reward);
-                        var baseValue = (reward as NumberBasedReward).BaseValue;
-
-                        EditorGUILayout.BeginHorizontal();
-                        EditorGUILayout.LabelField("Base Value:", baseValue.ToString());
-                        var newValue = EditorGUILayout.IntField("Value:", currentValue);
-                        EditorGUILayout.EndHorizontal();
-
-                        if (EditorGUI.EndChangeCheck())
-                        {
-                            var value = this.ValueEntry.SmartValue;
-                            value.SetAmount(reward, newValue);
-                            this.ValueEntry.Values.ForceMarkDirty();
-                        }
-                    }
-
-                    EditorGUILayout.EndVertical();
-                }
-
-                EditorGUI.indentLevel--;
-            }
         }
     }
 }
