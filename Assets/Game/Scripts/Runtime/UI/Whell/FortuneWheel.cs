@@ -93,7 +93,7 @@ namespace Game.UI.Wheel
                 0
             );
 
-            slot.transform.SetParent(wheelTransform);
+            slot.transform.SetParent(wheelTransform, false);
             slot.transform.localPosition = position;
             slot.transform.localRotation = Quaternion.Euler(0, 0,
                 Mathf.Atan2(-position.normalized.y, -position.normalized.x) * Mathf.Rad2Deg + 90);
@@ -120,11 +120,11 @@ namespace Game.UI.Wheel
                 return;
             }
 
-            int amount = item.rewardsToGive.Count > 0
-                ? currentSlots[index].GetAmount(item.rewardsToGive[0])
-                : 0;
+            string amountText = item.rewardsToGive.Count > 0
+                ? $"x{currentSlots[index].GetAmount(item.rewardsToGive[0])}"
+                : string.Empty;
 
-            slot.SetContent(item.itemSprite, $"x{amount}");
+            slot.SetContent(item.itemSprite, amountText);
         }
 
         private void ExecuteSpinSequence(float targetAngle, Action onComplete)

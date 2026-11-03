@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
 {
-    private const float PREVIEW_SIZE = 48f;
+    private const float PREVIEW_SIZE = 64f;
     private const float AMOUNT_WIDTH = 56f;
     private const float WEIGHT_LABEL_WIDTH = 48f;
 

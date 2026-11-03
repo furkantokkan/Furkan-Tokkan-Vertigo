@@ -20,7 +20,7 @@ MonoBehaviour:
   spinEasePhase2: 1
   spinEasePhase3: 18
   slotDistance: 160
-  slotSize: {x: 50, y: 50}
+  slotSize: {x: 64, y: 64}
   normalVisuals:
     wheel: {fileID: 21300000, guid: 222b0ac8627f1374aaa7f9c3235cfd24, type: 3}
     indicator: {fileID: 21300000, guid: a3121c054957dbc46beee3d961d0871f, type: 3}
