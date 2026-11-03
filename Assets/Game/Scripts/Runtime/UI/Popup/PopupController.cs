@@ -1,5 +1,4 @@
 using Game.UI.Popup;
-using Game.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using UniRx;
@@ -26,24 +25,23 @@ namespace Game.UI
                 .AddTo(disposables);
 
             MessageBroker.Default
-                .Receive<string>()
-                .Where(msg => msg == GameConst.Events.EXIT_BUTTON_CLICKED)
+                .Receive<ExitButtonClickedMessage>()
                 .Subscribe(_ => HandleExitButtonPopup())
                 .AddTo(disposables);
 
             bombPopup.onGiveUp = () =>
             {
-                MessageBroker.Default.Publish(GameConst.Events.GAME_OVER);
+                MessageBroker.Default.Publish(new GameOverMessage());
             };
 
             bombPopup.onRevive = () =>
             {
-                MessageBroker.Default.Publish(GameConst.Events.PLAYER_REVIVED);
+                MessageBroker.Default.Publish(new PlayerRevivedMessage());
             };
 
             exitButtonPopup.onSelection1 = () =>
             {
-                MessageBroker.Default.Publish(GameConst.Events.EXIT_CONFIRMED);
+                MessageBroker.Default.Publish(new ExitConfirmedMessage());
             };
         }
 

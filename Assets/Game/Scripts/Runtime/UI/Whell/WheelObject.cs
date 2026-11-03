@@ -14,6 +14,7 @@ namespace Game.UI.Wheel
         public void SetContent(Sprite sprite, string text)
         {
             image.sprite = sprite;
+            image.enabled = sprite != null;
             this.text.text = text;
         }
 

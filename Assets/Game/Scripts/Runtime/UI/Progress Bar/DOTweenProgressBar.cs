@@ -1,6 +1,6 @@
 using DG.Tweening;
+using Game.UI;
 using Game.UI.Progressbar;
-using Game.Utilities;
 using UniRx;
 using UnityEngine.UI;
 using UnityEngine;
@@ -40,7 +40,7 @@ public class DOTweenProgressBar : IProgressBar
             settings.LeftMoveDuration
         ).SetEase(settings.LeftEase);
 
-        firstMove.OnComplete(() => MessageBroker.Default.Publish(GameConst.Events.PROGRESS_FIRST_STOP));
+        firstMove.OnComplete(() => MessageBroker.Default.Publish(new ProgressFirstStopMessage()));
 
         currentSequence.Append(firstMove);
 

@@ -1,5 +1,4 @@
 using DG.Tweening;
-using Game.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using UniRx;
@@ -26,7 +25,7 @@ namespace Game.UI
         }
         private void OnDisable()
         {
-            MessageBroker.Default.Publish(GameConst.Events.REWARD_POPUP_CLOSED);
+            MessageBroker.Default.Publish(new RewardPopupClosedMessage());
             showSequence?.Kill();
             StopAllCoroutines();
             isReadyToClose = false;

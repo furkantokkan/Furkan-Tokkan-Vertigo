@@ -1,6 +1,5 @@
 using DG.Tweening;
 using Game.Boxes;
-using Game.Collectable;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -13,7 +12,6 @@ namespace Game.UI.Wheel
     {
         private readonly Transform wheelTransform;
         private readonly WheelSettings settings;
-        private readonly Dictionary<WheelItem, float> itemAngles;
         private readonly WheelPoolManager poolManager;
         private readonly List<WheelObject> activeSlots;
 
@@ -23,27 +21,28 @@ namespace Game.UI.Wheel
 
         public bool IsSpinning => isSpinning;
 
+        private float AnglePerSlot => 360f / currentSlots.Length;
+
         public FortuneWheel(Transform wheelTransform, WheelSettings settings)
         {
             this.wheelTransform = wheelTransform;
             this.settings = settings;
-            this.itemAngles = new Dictionary<WheelItem, float>();
             this.activeSlots = new List<WheelObject>();
-            this.poolManager = new WheelPoolManager(settings.SlotPrefab, settings.SlotCount);
+            this.poolManager = new WheelPoolManager(settings.SlotPrefab);
         }
 
         public void Initialize()
         {
-            CreateSlots();
             currentContent = null;
         }
 
         public void Spin(WheelSlot wheelSlot, Action onComplete)
         {
-            if (isSpinning || !itemAngles.ContainsKey(wheelSlot.item)) return;
+            int slotIndex = currentSlots != null ? Array.IndexOf(currentSlots, wheelSlot) : -1;
+            if (isSpinning || slotIndex < 0) return;
 
             isSpinning = true;
-            float targetAngle = itemAngles[wheelSlot.item];
+            float targetAngle = slotIndex * AnglePerSlot;
             ExecuteSpinSequence(targetAngle, onComplete);
         }
 
@@ -54,6 +53,10 @@ namespace Game.UI.Wheel
             {
                 currentContent = content;
                 currentSlots = content.BoxContentItems.Slots;
+
+                if (activeSlots.Count != currentSlots.Length)
+                    CreateSlots(currentSlots.Length);
+
                 UpdateSlotContents();
             }
         }
@@ -63,16 +66,15 @@ namespace Game.UI.Wheel
             isSpinning = false;
             Stop();
             ClearSlots();
-            itemAngles.Clear();
             currentContent = null;
             currentSlots = null;
         }
 
-        private void CreateSlots()
+        private void CreateSlots(int slotCount)
         {
             ClearSlots();
 
-            for (int i = 0; i < settings.SlotCount; i++)
+            for (int i = 0; i < slotCount; i++)
             {
                 var slot = poolManager.Get();
                 ConfigureSlotTransform(slot, i);
@@ -82,7 +84,7 @@ namespace Game.UI.Wheel
 
         private void ConfigureSlotTransform(WheelObject slot, int index)
         {
-            float angle = index * settings.AnglePerSlot;
+            float angle = index * AnglePerSlot;
             float radian = angle * Mathf.Deg2Rad;
             Vector3 position = new Vector3(
                 -Mathf.Sin(radian) * settings.SlotDistance,
@@ -102,25 +104,26 @@ namespace Game.UI.Wheel
 
         private void UpdateSlotContents()
         {
-            itemAngles.Clear();
-            for (int i = 0; i < settings.SlotCount && i < currentSlots.Length; i++)
+            for (int i = 0; i < currentSlots.Length; i++)
             {
-                if (currentSlots[i].item != null && i < activeSlots.Count)
-                {
-                    itemAngles[currentSlots[i].item] = i * settings.AnglePerSlot;
-                    UpdateSlotVisuals(i);
-                }
+                UpdateSlotVisuals(i);
             }
         }
         private void UpdateSlotVisuals(int index)
         {
             var slot = activeSlots[index];
             var item = currentSlots[index].item;
-            float value = item.rewardsToGive.Count > 0
-                ? currentSlots[index].GetValue<float>(item.rewardsToGive[0])
+            if (item == null)
+            {
+                slot.SetContent(null, string.Empty);
+                return;
+            }
+
+            int amount = item.rewardsToGive.Count > 0
+                ? currentSlots[index].GetAmount(item.rewardsToGive[0])
                 : 0;
 
-            slot.SetContent(item.itemSprite, $"x{value:F0}");
+            slot.SetContent(item.itemSprite, $"x{amount}");
         }
 
         private void ExecuteSpinSequence(float targetAngle, Action onComplete)

@@ -17,8 +17,6 @@ namespace Game.Boxes
         [TextArea]
         public string description;
 
-        private Box box;
-
         [BoxGroup("Content Settings")]
         [PropertyTooltip("Wave index in the box (1-based)")]
         [ReadOnly, SerializeField]
@@ -39,13 +37,11 @@ namespace Game.Boxes
         [TitleGroup("Slot Settings")]
         [HideLabel]
         [SerializeField]
-        public BoxContentItems BoxContentItems;
+        public BoxContentItems BoxContentItems = new BoxContentItems();
 
         public void Initialize(Dependency dep)
         {
-            this.box = dep.box;
             this.waveIndex = dep.waveIndex;
-            BoxContentItems = new BoxContentItems(box);
         }
 
         public struct Dependency

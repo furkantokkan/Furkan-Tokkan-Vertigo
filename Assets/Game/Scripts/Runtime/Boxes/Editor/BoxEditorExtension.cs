@@ -201,7 +201,7 @@ namespace Game.Boxes.Editor
 
                                 // Her slot için farklý bir random deðer
                                 float randomValue = minValue + (float)(rewardRandom.NextDouble() * (maxValue - minValue));
-                                slot.SetValue(reward, randomValue);
+                                slot.SetAmount(reward, Mathf.RoundToInt(randomValue));
                             }
                         }
                     }
@@ -228,7 +228,7 @@ namespace Game.Boxes.Editor
                     if (reward is NumberBasedReward)
                     {
                         float randomValue = UnityEngine.Random.Range(range.x * 0.8f, range.y * 0.8f);
-                        selectedSlot.SetValue(reward, randomValue);
+                        selectedSlot.SetAmount(reward, Mathf.RoundToInt(randomValue));
                     }
                 }
             }

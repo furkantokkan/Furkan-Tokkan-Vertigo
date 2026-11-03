@@ -79,19 +79,18 @@ namespace Game.UI.Progressbar
         private void SubscribeToEvents()
         {
             MessageBroker.Default
-                .Receive<string>()
-                .Where(msg => msg == GameConst.Events.PROGRESS_FIRST_STOP)
+                .Receive<ProgressFirstStopMessage>()
                 .Subscribe(_ => OnFirstStopReached())
                 .AddTo(disposables);
 
             MessageBroker.Default
-                .Receive<string>()
-                .Where(msg =>
-                    msg == GameConst.Events.WAVE_SUPER ||
-                    msg == GameConst.Events.WAVE_SAFE ||
-                    msg == GameConst.Events.WAVE_NORMAL ||
-                    msg == GameConst.Events.GAME_OVER)
-                .Subscribe(OnWaveMessage)
+                .Receive<WaveTypeChangedMessage>()
+                .Subscribe(message => OnWaveTypeChanged(message.WaveType))
+                .AddTo(disposables);
+
+            MessageBroker.Default
+                .Receive<GameOverMessage>()
+                .Subscribe(_ => Reset())
                 .AddTo(disposables);
 
             MessageBroker.Default
@@ -105,22 +104,19 @@ namespace Game.UI.Progressbar
             AdvanceWave();
         }
 
-        private void OnWaveMessage(string message)
+        private void OnWaveTypeChanged(WaveType waveType)
         {
-            switch (message)
+            switch (waveType)
             {
-                case GameConst.Events.WAVE_SUPER:
+                case WaveType.Super:
                     progressImage.color = superColor;
                     break;
-                case GameConst.Events.WAVE_SAFE:
+                case WaveType.Safe:
                     progressImage.color = safeColor;
                     Debug.Log("Safe Wave");
                     break;
-                case GameConst.Events.WAVE_NORMAL:
+                case WaveType.Normal:
                     progressImage.color = normalColor;
-                    break;
-                case GameConst.Events.GAME_OVER:
-                    Reset();
                     break;
             }
         }

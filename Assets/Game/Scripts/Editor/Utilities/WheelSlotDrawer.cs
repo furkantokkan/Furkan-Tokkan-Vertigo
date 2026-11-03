@@ -39,7 +39,7 @@ public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
             value.item = newItem;
             value.weight = newItem != null ? 16.67f : 0f;
             value.ValidateRewards();
-            this.ValueEntry.SmartValue = value;
+            this.ValueEntry.Values.ForceMarkDirty();
         }
 
         var weightRect = EditorGUILayout.GetControlRect(false, 20);
@@ -49,7 +49,7 @@ public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
         {
             var value = this.ValueEntry.SmartValue;
             value.weight = newWeight;
-            this.ValueEntry.SmartValue = value;
+            this.ValueEntry.Values.ForceMarkDirty();
         }
 
         if (item != null && item.rewardsToGive.Count > 0)
@@ -73,7 +73,7 @@ public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
                     if (reward is NumberBasedReward)
                     {
                         EditorGUI.BeginChangeCheck();
-                        var currentValue = this.ValueEntry.SmartValue.GetValue<int>(reward);
+                        var currentValue = this.ValueEntry.SmartValue.GetAmount(reward);
                         var baseValue = (reward as NumberBasedReward).BaseValue;
 
                         EditorGUILayout.BeginHorizontal();
@@ -84,8 +84,8 @@ public class WheelSlotDrawer : OdinValueDrawer<WheelSlot>
                         if (EditorGUI.EndChangeCheck())
                         {
                             var value = this.ValueEntry.SmartValue;
-                            value.SetValue(reward, newValue);
-                            this.ValueEntry.SmartValue = value;
+                            value.SetAmount(reward, newValue);
+                            this.ValueEntry.Values.ForceMarkDirty();
                         }
                     }
 

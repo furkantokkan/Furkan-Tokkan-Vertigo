@@ -16,8 +16,7 @@ namespace Game.UI.Rewards
             UpdateMoneyDisplay();
 
             MessageBroker.Default
-                .Receive<string>()
-                .Where(msg => msg == GameConst.Events.GAME_OVER)
+                .Receive<GameOverMessage>()
                 .Subscribe(_ => SaveAndUpdateMoney())
                 .AddTo(disposables);
         }

@@ -17,7 +17,7 @@ namespace Game.UI.Rewards
         [SerializeField] private Button exitButton;
 
         private RewardItemPoolManager poolManager;
-        private readonly Dictionary<AbstractReward, float> rewardCounts = new Dictionary<AbstractReward, float>();
+        private readonly Dictionary<AbstractReward, int> rewardCounts = new Dictionary<AbstractReward, int>();
         private readonly CompositeDisposable disposables = new CompositeDisposable();
 
         private void Awake()
@@ -44,26 +44,24 @@ namespace Game.UI.Rewards
                 .AddTo(disposables);
 
             MessageBroker.Default
-                .Receive<string>()
-                .Where(msg => msg == GameConst.Events.GAME_OVER)
+                .Receive<GameOverMessage>()
                 .Subscribe(_ => ResetRewards())
                 .AddTo(disposables);
 
             MessageBroker.Default
-                .Receive<string>()
-                .Where(msg => msg == GameConst.Events.EXIT_CONFIRMED)
+                .Receive<ExitConfirmedMessage>()
                 .Subscribe(_ => HandleOnSelectExit())
                 .AddTo(disposables);
         }
 
         private void RequestExitPopup()
         {
-            MessageBroker.Default.Publish(GameConst.Events.EXIT_BUTTON_CLICKED);
+            MessageBroker.Default.Publish(new ExitButtonClickedMessage());
         }
         private void HandleOnSelectExit()
         {
             SaveGoldPoints();
-            MessageBroker.Default.Publish(GameConst.Events.GAME_OVER);
+            MessageBroker.Default.Publish(new GameOverMessage());
         }
         private void SaveGoldPoints()
         {
@@ -73,7 +71,7 @@ namespace Game.UI.Rewards
                 if (reward != null && reward.RewardType == RewardType.GoldPoint)
                 {
                     int currentGold = PlayerPrefs.GetInt(GameConst.GOLD_KEY, 0);
-                    int newGold = currentGold + Mathf.RoundToInt(kvp.Value);
+                    int newGold = currentGold + kvp.Value;
                     PlayerPrefs.SetInt(GameConst.GOLD_KEY, newGold);
                     PlayerPrefs.Save();
 
@@ -91,19 +89,18 @@ namespace Game.UI.Rewards
             {
                 if (reward == null) continue;
 
-                float rewardValue = message.Slot.GetValue<float>(reward);
+                int rewardAmount = message.Slot.GetAmount(reward);
 
                 if (rewardCounts.ContainsKey(reward))
                 {
-                    rewardCounts[reward] += rewardValue;
+                    rewardCounts[reward] += rewardAmount;
                 }
                 else
                 {
-                    rewardCounts.Add(reward, rewardValue);
+                    rewardCounts.Add(reward, rewardAmount);
                 }
 
-                int displayAmount = Mathf.RoundToInt(rewardCounts[reward]);
-                poolManager.GetOrUpdateExisting(reward.itemSprite, displayAmount);
+                poolManager.GetOrUpdateExisting(reward.itemSprite, rewardCounts[reward]);
             }
         }
 

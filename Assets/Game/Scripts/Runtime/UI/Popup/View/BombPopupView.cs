@@ -1,5 +1,4 @@
 using DG.Tweening;
-using Game.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +33,7 @@ namespace Game.UI
 
         private void OnDisable()
         {
-            MessageBroker.Default.Publish(GameConst.Events.BOMB_POPUP_CLOSED);
+            MessageBroker.Default.Publish(new BombPopupClosedMessage());
         }
 
         public override void Show()

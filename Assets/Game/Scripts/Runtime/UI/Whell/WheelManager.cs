@@ -1,6 +1,5 @@
 using Game.Collectable;
 using Game.UI.Popup;
-using Game.Utilities;
 using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
@@ -51,23 +50,22 @@ namespace Game.UI.Wheel
         }
         private void SubscribeToEvents()
         {
-            MessageBroker.Default.Receive<string>()
-                .Where(msg => msg == GameConst.Events.REWARD_POPUP_CLOSED ||
-                              msg == GameConst.Events.BOMB_POPUP_CLOSED ||
-                              msg == GameConst.Events.GAME_OVER)  
-                .Subscribe(msg =>
-                {
-                    if (msg == GameConst.Events.GAME_OVER)
-                    {
-                        ResetGame();
-                    }
-                    else
-                    {
-                        fortuneWheel.UpdateVisuals(currentWave);
-                        CheckAndPublishWaveType();
-                    }
-                })
+            MessageBroker.Default.Receive<RewardPopupClosedMessage>()
+                .Subscribe(_ => ShowCurrentWave())
                 .AddTo(disposables);
+
+            MessageBroker.Default.Receive<BombPopupClosedMessage>()
+                .Subscribe(_ => ShowCurrentWave())
+                .AddTo(disposables);
+
+            MessageBroker.Default.Receive<GameOverMessage>()
+                .Subscribe(_ => ResetGame())
+                .AddTo(disposables);
+        }
+        private void ShowCurrentWave()
+        {
+            fortuneWheel.UpdateVisuals(currentWave);
+            CheckAndPublishWaveType();
         }
         private void ResetGame()
         {
@@ -83,17 +81,17 @@ namespace Game.UI.Wheel
 
             if (content.isSuperBox)
             {
-                MessageBroker.Default.Publish(GameConst.Events.WAVE_SUPER);
+                MessageBroker.Default.Publish(new WaveTypeChangedMessage(WaveType.Super));
                 SetIndicatorAndWheel(settings.Box.superWheel, settings.Box.superIndicator);
             }
             else if (content.isSafeBox)
             {
-                MessageBroker.Default.Publish(GameConst.Events.WAVE_SAFE);
+                MessageBroker.Default.Publish(new WaveTypeChangedMessage(WaveType.Safe));
                 SetIndicatorAndWheel(settings.Box.safeWheel, settings.Box.safeIndicator);
             }
             else
             {
-                MessageBroker.Default.Publish(GameConst.Events.WAVE_NORMAL);
+                MessageBroker.Default.Publish(new WaveTypeChangedMessage(WaveType.Normal));
                 SetIndicatorAndWheel(settings.Box.defaultWheel, settings.Box.defaultIndicator);
             }
         }
@@ -137,7 +135,7 @@ namespace Game.UI.Wheel
         [Button("Reset Wave", ButtonSizes.Medium)]
         private void ResetWave()
         {
-            MessageBroker.Default.Publish(GameConst.Events.GAME_OVER);
+            MessageBroker.Default.Publish(new GameOverMessage());
         }
 #endif
     }

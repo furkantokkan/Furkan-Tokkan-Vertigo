@@ -27,9 +27,7 @@ namespace Game.UI.Wheel
         [SerializeField] private float slotDistance = 140f;
         [SerializeField] private Vector2 slotSize = new Vector2(50, 50);
 
-        public readonly float AnglePerSlot = 360f / 8;
         public readonly float OffsetAngle = 0;
-        public readonly int SlotCount = 8;
 
         // Properties
         public Box Box => box;

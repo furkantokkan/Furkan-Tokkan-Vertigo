@@ -25,60 +25,45 @@ MonoBehaviour:
   description: 
   waveIndex: 4
   BoxContentItems:
-    slot1:
-      weight: 13.6
+    slots:
+    - weight: 13.6
       item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,300975"}'
-    slot2:
-      weight: 13.6
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+        amount: 8
+    - weight: 13.6
       item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,922828"}'
-    slot3:
-      weight: 9.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 8
+    - weight: 9.1
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot4:
-      weight: 12.5
+      rewardAmounts: []
+    - weight: 12.5
       item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,966339"}'
-    slot5:
-      weight: 15.9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 4
+    - weight: 15.9
       item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,065416"}'
-    slot6:
-      weight: 14.8
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 6
+    - weight: 14.8
       item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,34499"}'
-    slot7:
-      weight: 9.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 8
+    - weight: 9.1
       item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,978734"}'
-    slot8:
-      weight: 11.4
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 9
+    - weight: 11.4
       item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,367558"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+        amount: 6
 --- !u!114 &-3590382991380846228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,60 +89,45 @@ MonoBehaviour:
   description: 
   waveIndex: 0
   BoxContentItems:
-    slot1:
-      weight: 10
+    slots:
+    - weight: 10
       item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,192028"}'
-    slot2:
-      weight: 10
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 8
+    - weight: 10
       item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,188265"}'
-    slot3:
-      weight: 10
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 7
+    - weight: 10
       item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,351025"}'
-    slot4:
-      weight: 17.5
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 3
+    - weight: 17.5
       item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,176548"}'
-    slot5:
-      weight: 10
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+        amount: 7
+    - weight: 10
       item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
-      serializedRewardValues:
-      - '{"value":"4,961471"}'
-    slot6:
-      weight: 15
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+        amount: 5
+    - weight: 15
       item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,847318"}'
-    slot7:
-      weight: 17.5
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+        amount: 4
+    - weight: 17.5
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot8:
-      weight: 10
+      rewardAmounts: []
+    - weight: 10
       item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,97529"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 7
 --- !u!114 &-2853709666593103210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,60 +153,45 @@ MonoBehaviour:
   description: 
   waveIndex: 1
   BoxContentItems:
-    slot1:
-      weight: 16.3
+    slots:
+    - weight: 16.3
       item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
-      serializedRewardValues:
-      - '{"value":"4,228372"}'
-    slot2:
-      weight: 9.3
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+        amount: 4
+    - weight: 9.3
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot3:
-      weight: 17.4
+      rewardAmounts: []
+    - weight: 17.4
       item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"2,949599"}'
-    slot4:
-      weight: 9.3
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 3
+    - weight: 9.3
       item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,133628"}'
-    slot5:
-      weight: 10.5
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+        amount: 3
+    - weight: 10.5
       item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
-      serializedRewardValues:
-      - '{"value":"5,498506"}'
-    slot6:
-      weight: 9.3
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+        amount: 5
+    - weight: 9.3
       item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,673974"}'
-    slot7:
-      weight: 14
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 4
+    - weight: 14
       item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,457561"}'
-    slot8:
-      weight: 14
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
+        amount: 8
+    - weight: 14
       item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"2,173068"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 2
 --- !u!114 &-1686831421444603858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,60 +217,45 @@ MonoBehaviour:
   description: 
   waveIndex: 7
   BoxContentItems:
-    slot1:
-      weight: 14.3
+    slots:
+    - weight: 14.3
       item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,785976"}'
-    slot2:
-      weight: 10.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+        amount: 4
+    - weight: 10.2
       item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,420429"}'
-    slot3:
-      weight: 11.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 7
+    - weight: 11.2
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot4:
-      weight: 14.3
+      rewardAmounts: []
+    - weight: 14.3
       item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,912405"}'
-    slot5:
-      weight: 14.3
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 7
+    - weight: 14.3
       item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"2,010107"}'
-    slot6:
-      weight: 9.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 2
+    - weight: 9.2
       item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,782892"}'
-    slot7:
-      weight: 15.3
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 4
+    - weight: 15.3
       item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
-      serializedRewardValues:
-      - '{"value":"5,763592"}'
-    slot8:
-      weight: 11.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+        amount: 6
+    - weight: 11.2
       item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
-      serializedRewardValues:
-      - '{"value":"5,738785"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+        amount: 6
 --- !u!114 &-1560369739652172229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,60 +281,45 @@ MonoBehaviour:
   description: 
   waveIndex: 8
   BoxContentItems:
-    slot1:
-      weight: 15.9
+    slots:
+    - weight: 15.9
       item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,818632"}'
-    slot2:
-      weight: 15.9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 9
+    - weight: 15.9
       item: {fileID: 11400000, guid: 9f4de450a9a21094cb31d426967d3349, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,877833"}'
-    slot3:
-      weight: 10.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+        amount: 8
+    - weight: 10.2
       item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,872698"}'
-    slot4:
-      weight: 12.5
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 8
+    - weight: 12.5
       item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"9,187686"}'
-    slot5:
-      weight: 13.6
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 9
+    - weight: 13.6
       item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"2,266258"}'
-    slot6:
-      weight: 9.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 2
+    - weight: 9.1
       item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,413495"}'
-    slot7:
-      weight: 11.4
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 3
+    - weight: 11.4
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot8:
-      weight: 11.4
+      rewardAmounts: []
+    - weight: 11.4
       item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,638271"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,60 +429,45 @@ MonoBehaviour:
   description: 
   waveIndex: 3
   BoxContentItems:
-    slot1:
-      weight: 14.6
+    slots:
+    - weight: 14.6
       item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,919982"}'
-    slot2:
-      weight: 9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+        amount: 8
+    - weight: 9
       item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,483522"}'
-    slot3:
-      weight: 11.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 6
+    - weight: 11.2
       item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,922508"}'
-    slot4:
-      weight: 9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 9
+    - weight: 9
       item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,941754"}'
-    slot5:
-      weight: 11.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 7
+    - weight: 11.2
       item: {fileID: 11400000, guid: bd5514619ab373347b2983426859e866, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,715815"}'
-    slot6:
-      weight: 14.6
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}
+        amount: 9
+    - weight: 14.6
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot7:
-      weight: 13.5
+      rewardAmounts: []
+    - weight: 13.5
       item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,771814"}'
-    slot8:
-      weight: 16.9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+        amount: 7
+    - weight: 16.9
       item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,609508"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 9
 --- !u!114 &2601443379634902613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,62 +493,47 @@ MonoBehaviour:
   description: 
   waveIndex: 5
   BoxContentItems:
-    slot1:
-      weight: 9.2
+    slots:
+    - weight: 9.2
       item: {fileID: 11400000, guid: 9e20b046b14cf4040ac46bd654a11f6a, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,637438"}'
-    slot2:
-      weight: 16.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: ea56380913e41924984a361f08c762ec, type: 2}
+        amount: 4
+    - weight: 16.1
       item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"15,30637"}'
-    slot3:
-      weight: 11.5
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 15
+    - weight: 11.5
       item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
-      serializedRewardValues:
-      - '{"value":"10,38253"}'
-    slot4:
-      weight: 14.9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
+        amount: 10
+    - weight: 14.9
       item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"11,7355"}'
-    slot5:
-      weight: 9.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 12
+    - weight: 9.2
       item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"10,08062"}'
-    slot6:
-      weight: 12.6
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 10
+    - weight: 12.6
       item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"4,306165"}'
-    slot7:
-      weight: 10.3
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 4
+    - weight: 10.3
       item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"18,58295"}'
-    slot8:
-      weight: 16.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 19
+    - weight: 16.1
       item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"10,77769"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 11
 --- !u!114 &2609701723852908647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,60 +559,45 @@ MonoBehaviour:
   description: 
   waveIndex: 2
   BoxContentItems:
-    slot1:
-      weight: 17
+    slots:
+    - weight: 17
       item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,252443"}'
-    slot2:
-      weight: 12.5
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 7
+    - weight: 12.5
       item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"3,185577"}'
-    slot3:
-      weight: 9.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 3
+    - weight: 9.1
       item: {fileID: 11400000, guid: 9df62880ae0f54a43844fe738c8402ac, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,152832"}'
-    slot4:
-      weight: 9.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 7
+    - weight: 9.1
       item: {fileID: 11400000, guid: 9778ad0559f9ee448b8d48b5f645c5e0, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"8,199524"}'
-    slot5:
-      weight: 9.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 8
+    - weight: 9.1
       item: {fileID: 11400000, guid: 38bf57ca95e88c0409cbf5b7f05ab17c, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,318496"}'
-    slot6:
-      weight: 10.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 7
+    - weight: 10.2
       item: {fileID: 11400000, guid: a9995a5dff6abc64b89fe39ade91ba23, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"5,207186"}'
-    slot7:
-      weight: 15.9
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 5
+    - weight: 15.9
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot8:
-      weight: 17
+      rewardAmounts: []
+    - weight: 17
       item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,095705"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+        amount: 6
 --- !u!114 &7765596130575264853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,60 +623,45 @@ MonoBehaviour:
   description: 
   waveIndex: 6
   BoxContentItems:
-    slot1:
-      weight: 11.1
+    slots:
+    - weight: 11.1
       item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
-      serializedRewardValues:
-      - '{"value":"4,936846"}'
-    slot2:
-      weight: 15.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+        amount: 5
+    - weight: 15.2
       item: {fileID: 11400000, guid: 167d495aa3c340c4cb1ff5485d95360e, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,378623"}'
-    slot3:
-      weight: 15.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 6
+    - weight: 15.2
       item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"1,96728"}'
-    slot4:
-      weight: 15.2
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 2
+    - weight: 15.2
       item: {fileID: 11400000, guid: 67fc46c9aa7ae234bab921113a835f34, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,80695"}'
-    slot5:
-      weight: 10.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 7
+    - weight: 10.1
       item: {fileID: 11400000, guid: d1da8689ce22d5b4fa993c803ab9c2aa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
-      serializedRewardValues:
-      - '{"value":"2,788354"}'
-    slot6:
-      weight: 11.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}
+        amount: 3
+    - weight: 11.1
       item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
-      serializedRewardValues:
-      - '{"value":"4,917971"}'
-    slot7:
-      weight: 11.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+        amount: 5
+    - weight: 11.1
       item: {fileID: 11400000, guid: a16f0807e19564e4a8eeb2e0e5e2b061, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
-      serializedRewardValues:
-      - '{"value":"5,062076"}'
-    slot8:
-      weight: 11.1
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}
+        amount: 5
+    - weight: 11.1
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
+      rewardAmounts: []
 --- !u!114 &9094805802859902316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,57 +687,42 @@ MonoBehaviour:
   description: 
   waveIndex: 9
   BoxContentItems:
-    slot1:
-      weight: 9.6
+    slots:
+    - weight: 9.6
       item: {fileID: 11400000, guid: 3604f1015ebbf9d4dbb9303ba0e32ca1, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"9,615584"}'
-    slot2:
-      weight: 13.8
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 10
+    - weight: 13.8
       item: {fileID: 11400000, guid: 2c97043580fdc8a45b8426c92bc30dfa, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"9,11453"}'
-    slot3:
-      weight: 16
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 9
+    - weight: 16
       item: {fileID: 11400000, guid: 8fe28f279aa565042b67652d6f2af585, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
-      serializedRewardValues:
-      - '{"value":"2,07151"}'
-    slot4:
-      weight: 11.7
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}
+        amount: 2
+    - weight: 11.7
       item: {fileID: 11400000, guid: 5fa42a8ca2d0fb24aa1242aaa114ee44, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
-      serializedRewardValues:
-      - '{"value":"7,185252"}'
-    slot5:
-      weight: 9.6
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d1bc10d3f043535469b232cbf43bc997, type: 2}
+        amount: 7
+    - weight: 9.6
       item: {fileID: 11400000, guid: 704ceddbdf9a5954680080152dcde7ff, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,813787"}'
-    slot6:
-      weight: 10.6
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}
+        amount: 7
+    - weight: 10.6
       item: {fileID: 11400000, guid: 8bb10930e5bd5e14caff5a4508ad6b72, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
-      serializedRewardValues:
-      - '{"value":"4,635708"}'
-    slot7:
-      weight: 12.8
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}
+        amount: 5
+    - weight: 12.8
       item: {fileID: 11400000, guid: 10145a710507c5c4dbe5e0ab46e57238, type: 2}
-      serializedRewardKeys: []
-      serializedRewardValues: []
-    slot8:
-      weight: 16
+      rewardAmounts: []
+    - weight: 16
       item: {fileID: 11400000, guid: 331f2ddd3daeeda448c6e8ad352c9304, type: 2}
-      serializedRewardKeys:
-      - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
-      serializedRewardValues:
-      - '{"value":"6,369752"}'
+      rewardAmounts:
+      - reward: {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
+        amount: 6
