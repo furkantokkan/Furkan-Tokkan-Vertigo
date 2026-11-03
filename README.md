@@ -37,7 +37,7 @@ A risk-and-reward spin wheel made in Unity, plus an Odin-based editor framework 
 2. Open `Assets/Game/Scenes/Game.unity` and press Play.
 3. Open the authoring window from **Tools → Game Framework**.
 
-The wheel reads its data from `Assets/Game/Resources/WheelSettings.asset`, which points to the **Big Box** (60 waves).
+The wheel reads its settings from `Assets/Game/Resources/WheelSettings.asset`: the box it plays (**Big Box**, 60 waves), spin and slot layout, and the wheel and indicator art for each wave type.
 
 ## Editor framework
 
@@ -50,12 +50,13 @@ The wheel reads its data from `Assets/Game/Resources/WheelSettings.asset`, which
 | Items | Create wheel items or a bomb. The `ItemType` enum is regenerated automatically, and the item stores its type as the enum name (picked from a dropdown). |
 | Rewards | Create rewards through a type picker. The `RewardType` enum is regenerated automatically, and the reward stores its type as the enum name. |
 | Validation | An Odin validator keeps each asset's file name equal to its item name and offers a one-click fix. |
+| Wheel art | Wheel and indicator sprites for normal, safe and super waves are set once in `WheelSettings`, so every box uses the same art. |
 
 | Box | Wave | Item |
 | :---: | :---: | :---: |
 | <img src="Images/Editor1.jpg" width="280" alt="Box editor"> | <img src="Images/Editor2.jpg" width="280" alt="Wave editor"> | <img src="Images/Editor3.jpg" width="280" alt="Item editor"> |
 
-> The screenshots were taken before waves became a variable-length slot list, so they still show the fixed 8-slot grid.
+> The screenshots predate the variable-length slot list and the shared wheel art, so they still show the fixed 8-slot grid and per-box wheel sprites.
 
 ## Architecture
 
@@ -75,6 +76,7 @@ The wheel reads its data from `Assets/Game/Resources/WheelSettings.asset`, which
 ```mermaid
 flowchart LR
     Settings["WheelSettings (Resources)"] --> Box
+    Settings -->|"wheel + indicator per wave type"| Visuals[WaveVisuals]
     Box -->|"contents, one per wave"| Wave[BoxContent]
     Wave -->|"BoxContentItems.Slots"| Slot["WheelSlot[]"]
     Slot -->|item| Item[WheelItem]
@@ -158,7 +160,7 @@ The case was submitted on **16 January 2025** (the `Final APK` commit). The APK 
 | --- | --- |
 | 2025-01-20 | Wheel refactor: pooled `WheelObject` slot views |
 | 2025-01-28 – 30 | Editor framework refactor, new icons, `WheelSettings` cleanup |
-| 2026-11-03 | Typed events, integer reward amounts, variable slot count, string type IDs (details below) |
+| 2026-11-03 | Typed events, integer reward amounts, variable slot count, string type IDs, shared wheel art (details below) |
 
 **2026-11-03 update**
 
@@ -167,3 +169,4 @@ The case was submitted on **16 January 2025** (the `Final APK` commit). The APK 
 - **Variable slot count.** `BoxContentItems` holds a `WheelSlot[]` instead of `slot1` … `slot8`, and the wheel lays itself out for any count. Spins target the slot index, so two slots with the same item can no longer stop on the wrong one.
 - **Data migration.** All 70 existing waves (560 slots) were converted. Amounts were rounded to the whole numbers the wheel already displayed.
 - **String type IDs.** Item and reward assets store their `ItemType` / `RewardType` as the enum name (`"Bomb"`) instead of its number, so a server can use the same ID, and adding or reordering enum entries can no longer change what an asset means. All 19 items and 11 rewards were converted.
+- **Shared wheel art.** The wheel and indicator sprites for each wave type moved from every `Box` into `WheelSettings`, so they are set once. The two boxes had already drifted apart (the small box used the silver indicator for normal and super waves); the Big Box values, which the game plays, are now the shared set.

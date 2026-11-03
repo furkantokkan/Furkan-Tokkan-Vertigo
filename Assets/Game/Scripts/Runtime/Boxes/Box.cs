@@ -18,42 +18,6 @@ namespace Game.Boxes
         [Title("Background")]
         public Sprite background;
 
-        [BoxGroup("Wheel Types")]
-        [HorizontalGroup("Wheel Types/Row", Width = 75, MarginRight = 5)]
-        [PreviewField(75)]
-        [Title("Default")]
-        public Sprite defaultWheel;
-
-        [BoxGroup("Wheel Types")]
-        [HorizontalGroup("Wheel Types/Row", Width = 75, MarginRight = 5)]
-        [PreviewField(75)]
-        [Title("Safe")]
-        public Sprite safeWheel;
-
-        [BoxGroup("Wheel Types")]
-        [HorizontalGroup("Wheel Types/Row", Width = 75)]
-        [PreviewField(75)]
-        [Title("Super")]
-        public Sprite superWheel;
-
-        [BoxGroup("Indicator Types")]
-        [HorizontalGroup("Indicator Types/Row", Width = 75, MarginRight = 5)]
-        [PreviewField(75)]
-        [Title("Default")]
-        public Sprite defaultIndicator;
-
-        [BoxGroup("Indicator Types")]
-        [HorizontalGroup("Indicator Types/Row", Width = 75, MarginRight = 5)]
-        [PreviewField(75)]
-        [Title("Safe")]
-        public Sprite safeIndicator;
-
-        [BoxGroup("Indicator Types")]
-        [HorizontalGroup("Indicator Types/Row", Width = 75)]
-        [PreviewField(75)]
-        [Title("Super")]
-        public Sprite superIndicator;
-
         [BoxGroup("Box Information")]
         [Title("Box Description")]
         [TextArea(3, 5)]

@@ -27,6 +27,11 @@ namespace Game.UI.Wheel
         [SerializeField] private float slotDistance = 140f;
         [SerializeField] private Vector2 slotSize = new Vector2(50, 50);
 
+        [Header("Wave Visuals")]
+        [SerializeField] private WaveVisuals normalVisuals;
+        [SerializeField] private WaveVisuals safeVisuals;
+        [SerializeField] private WaveVisuals superVisuals;
+
         public readonly float OffsetAngle = 0;
 
         // Properties
@@ -40,6 +45,13 @@ namespace Game.UI.Wheel
         public float SlotDistance => slotDistance;
         public Vector2 SlotSize => slotSize;
 
+        public WaveVisuals GetVisuals(WaveType waveType) => waveType switch
+        {
+            WaveType.Safe => safeVisuals,
+            WaveType.Super => superVisuals,
+            _ => normalVisuals
+        };
+
         private void OnValidate()
         {
             ValidateSlotSettings();
@@ -49,6 +61,13 @@ namespace Game.UI.Wheel
         {
             if (slotDistance < 100)
                 slotDistance = 100f;
+        }
+
+        [System.Serializable]
+        public struct WaveVisuals
+        {
+            [HorizontalGroup, PreviewField(60)] public Sprite wheel;
+            [HorizontalGroup, PreviewField(60)] public Sprite indicator;
         }
     }
 }

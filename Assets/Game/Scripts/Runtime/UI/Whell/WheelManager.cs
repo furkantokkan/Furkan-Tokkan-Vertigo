@@ -78,22 +78,14 @@ namespace Game.UI.Wheel
         private void CheckAndPublishWaveType()
         {
             var content = settings.Box.contents[currentWave];
+            var waveType = content.isSuperBox ? WaveType.Super
+                : content.isSafeBox ? WaveType.Safe
+                : WaveType.Normal;
 
-            if (content.isSuperBox)
-            {
-                MessageBroker.Default.Publish(new WaveTypeChangedMessage(WaveType.Super));
-                SetIndicatorAndWheel(settings.Box.superWheel, settings.Box.superIndicator);
-            }
-            else if (content.isSafeBox)
-            {
-                MessageBroker.Default.Publish(new WaveTypeChangedMessage(WaveType.Safe));
-                SetIndicatorAndWheel(settings.Box.safeWheel, settings.Box.safeIndicator);
-            }
-            else
-            {
-                MessageBroker.Default.Publish(new WaveTypeChangedMessage(WaveType.Normal));
-                SetIndicatorAndWheel(settings.Box.defaultWheel, settings.Box.defaultIndicator);
-            }
+            MessageBroker.Default.Publish(new WaveTypeChangedMessage(waveType));
+
+            var visuals = settings.GetVisuals(waveType);
+            SetIndicatorAndWheel(visuals.wheel, visuals.indicator);
         }
 
         private void SetIndicatorAndWheel(Sprite wheel, Sprite indicator)

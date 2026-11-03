@@ -19,13 +19,14 @@ MonoBehaviour:
   spinEasePhase1: 12
   spinEasePhase2: 1
   spinEasePhase3: 18
-  phase1Duration: 0.20821977
-  phase2Duration: 0.56555736
-  phase3Duration: 0.22622289
-  slotDistance: 150
-  textVerticalOffset: 0
-  imageVerticalOffset: 4
+  slotDistance: 160
   slotSize: {x: 50, y: 50}
-  imageSize: {x: 35, y: 35}
-  textSize: {x: 30, y: 12}
-  textScale: 0.8
+  normalVisuals:
+    wheel: {fileID: 21300000, guid: 222b0ac8627f1374aaa7f9c3235cfd24, type: 3}
+    indicator: {fileID: 21300000, guid: a3121c054957dbc46beee3d961d0871f, type: 3}
+  safeVisuals:
+    wheel: {fileID: 21300000, guid: dd4de93eb58082d44aefa92e952fb9e3, type: 3}
+    indicator: {fileID: 21300000, guid: 1a8aaba80c8ab114990636763053f4b9, type: 3}
+  superVisuals:
+    wheel: {fileID: 21300000, guid: 60b8fdcf4588ef641ad2a10d2c2116d8, type: 3}
+    indicator: {fileID: 21300000, guid: 66db8b550a8dfd64b91c885ec317e3e8, type: 3}
