@@ -56,8 +56,6 @@ The wheel reads its settings from `Assets/Game/Resources/WheelSettings.asset`: t
 | :---: | :---: | :---: |
 | <img src="Images/Editor1.jpg" width="280" alt="Box editor"> | <img src="Images/Editor2.jpg" width="280" alt="Wave editor"> | <img src="Images/Editor3.jpg" width="280" alt="Item editor"> |
 
-> The screenshots predate the variable-length slot list and the shared wheel art, so they still show the fixed 8-slot grid and per-box wheel sprites.
-
 ## Architecture
 
 ### Assemblies
@@ -65,9 +63,9 @@ The wheel reads its settings from `Assets/Game/Resources/WheelSettings.asset`: t
 | Assembly | Contents |
 | --- | --- |
 | `Game.Collectable` | `WheelItem`, `BombItem`, rewards, `WheelSlot` |
-| `Game.Boxes` | `Box`, `BoxContent` (one wave), `BoxContentItems` (the slot array), content randomizer |
-| `Game.UI` | Wheel, popups, wave bar, reward panel, `GameMessages` |
-| `Game.Utilities` | Generic object pool and constants |
+| `Game.Boxes` | `Box`, `BoxContent` (one wave and its `WaveType` rule), `BoxContentItems` (the slot array), content randomizer |
+| `Game.UI` | `WheelSession` (the run's rules, plain C#), `WheelManager` (Unity wiring), popups, wave bar, reward panel, `GameMessages` |
+| `Game.Utilities` | Generic object pool, `GoldWallet` (saved gold), constants |
 | `Game.Editor` | Game Framework window, asset creators, `WheelSlotDrawer`, enum generator |
 | `Attributes`, `Validators` | `[NameCheck]` attribute and its Odin validator |
 
@@ -90,21 +88,24 @@ flowchart LR
 sequenceDiagram
     participant Player
     participant WheelManager
+    participant WheelSession
     participant FortuneWheel
     participant Broker as MessageBroker
     Player->>WheelManager: Spin
-    WheelManager->>WheelManager: Box.GetReward(wave) picks a slot by weight
+    WheelManager->>WheelSession: PickSlot() by slot weight
     WheelManager->>FortuneWheel: Spin(slot)
     FortuneWheel-->>WheelManager: wheel stopped on that slot
+    WheelManager->>WheelSession: CompleteSpin(slot)
     alt bomb slot
-        WheelManager->>Broker: BombGivenMessage
+        WheelSession->>Broker: BombGivenMessage
         Broker->>PopupController: bomb popup (give up / revive)
     else reward slot
-        WheelManager->>Broker: RewardGivenMessage
+        WheelSession->>Broker: RewardGivenMessage
         Broker->>PopupController: reward popup
         Broker->>RewardPanelController: add the amounts
-        Broker->>TopProgressBarController: advance the wave bar
     end
+    Broker->>TopProgressBarController: advance the wave bar
+    WheelSession->>Broker: WaveTypeChangedMessage for the next wave
 ```
 
 ### Events
@@ -121,9 +122,9 @@ MessageBroker.Default.Receive<GameOverMessage>()
 
 | Message | Published by | Received by |
 | --- | --- | --- |
-| `RewardGivenMessage` | `WheelManager` | `PopupController`, `RewardPanelController`, `TopProgressBarController` |
-| `BombGivenMessage` | `WheelManager` | `PopupController` |
-| `WaveTypeChangedMessage` | `WheelManager` | `TopProgressBarController` |
+| `RewardGivenMessage` | `WheelSession` | `PopupController`, `RewardPanelController`, `TopProgressBarController` |
+| `BombGivenMessage` | `WheelSession` | `PopupController`, `TopProgressBarController` |
+| `WaveTypeChangedMessage` | `WheelSession` | `TopProgressBarController` |
 | `ProgressFirstStopMessage` | `DOTweenProgressBar` | `TopProgressBarController` |
 | `RewardPopupClosedMessage` | `RewardPopupView` | `WheelManager` |
 | `BombPopupClosedMessage` | `BombPopupView` | `WheelManager` |
@@ -143,7 +144,7 @@ Assets/Game
 │   │   ├── Boxes         Box, BoxContent (wave), BoxContentItems (slot array)
 │   │   ├── Collectable   wheel items, bomb, rewards, WheelSlot
 │   │   ├── UI            wheel, popups, wave bar, reward panel, GameMessages
-│   │   └── Utilities     object pool, constants
+│   │   └── Utilities     object pool, GoldWallet, constants
 │   ├── Editor            Game Framework window, creators, drawers, enum generator
 │   ├── Attributes        NameCheck attribute
 │   └── Validators        Odin name validator
@@ -151,22 +152,3 @@ Assets/Game
 ├── Resources             WheelSettings, ProgressBarSettings, DOTweenSettings
 └── Art, Prefabs, Scenes
 ```
-
-## Changes after the case submission
-
-The case was submitted on **16 January 2025** (the `Final APK` commit). The APK and the gameplay video are from that build. Later work:
-
-| Date | Change |
-| --- | --- |
-| 2025-01-20 | Wheel refactor: pooled `WheelObject` slot views |
-| 2025-01-28 – 30 | Editor framework refactor, new icons, `WheelSettings` cleanup |
-| 2026-11-03 | Typed events, integer reward amounts, variable slot count, string type IDs, shared wheel art (details below) |
-
-**2026-11-03 update**
-
-- **Type-safe events.** String constants with `Receive<string>().Where(msg => msg == ...)` were replaced by one message type per event.
-- **Simpler reward amounts.** `WheelSlot` used to keep values as `object` in a dictionary, serialize them as JSON strings and convert them with a generic `GetValue<T>`. It now stores a list of rewards with an `int` amount. The old strings were culture-formatted (`"17,57432"`), so the same asset could parse to a different number on a device with another locale.
-- **Variable slot count.** `BoxContentItems` holds a `WheelSlot[]` instead of `slot1` … `slot8`, and the wheel lays itself out for any count. Spins target the slot index, so two slots with the same item can no longer stop on the wrong one.
-- **Data migration.** All 70 existing waves (560 slots) were converted. Amounts were rounded to the whole numbers the wheel already displayed.
-- **String type IDs.** Item and reward assets store their `ItemType` / `RewardType` as the enum name (`"Bomb"`) instead of its number, so a server can use the same ID, and adding or reordering enum entries can no longer change what an asset means. All 19 items and 11 rewards were converted.
-- **Shared wheel art.** The wheel and indicator sprites for each wave type moved from every `Box` into `WheelSettings`, so they are set once. The two boxes had already drifted apart (the small box used the silver indicator for normal and super waves); the Big Box values, which the game plays, are now the shared set.
