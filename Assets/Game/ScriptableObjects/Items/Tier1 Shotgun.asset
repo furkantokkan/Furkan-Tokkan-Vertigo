@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Tier1 Shotgun
   ItemSprite: {fileID: 21300000, guid: 56e9723af5cd0e047b8431062d1f63f1, type: 3}
-  itemType: 10
+  itemTypeId: Tier1Shotgun
   rewardsToGive:
   - {fileID: 11400000, guid: f49890f782ad01a45a3c40f896bf9914, type: 2}

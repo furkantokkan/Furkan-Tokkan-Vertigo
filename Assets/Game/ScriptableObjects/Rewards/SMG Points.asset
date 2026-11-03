@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: SMG Points
   ItemSprite: {fileID: 21300000, guid: a6eeee6aa31122f4fb84e57ec9a41d1b, type: 3}
-  RewardType: 5
+  rewardTypeId: SMGPoints
   baseValue: 1

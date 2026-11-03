@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Baseball Cap
   ItemSprite: {fileID: 21300000, guid: efba17b91cde1324aba0ca8849f90f24, type: 3}
-  itemType: 1
+  itemTypeId: BaseballCap
   rewardsToGive:
   - {fileID: 11400000, guid: 267fb6f2edb34dd4fa73314ec92356e6, type: 2}

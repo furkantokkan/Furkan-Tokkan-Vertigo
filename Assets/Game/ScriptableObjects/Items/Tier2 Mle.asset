@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Tier2 Mle
   ItemSprite: {fileID: 21300000, guid: f7a29f45afac653468d54b658aae675d, type: 3}
-  itemType: 11
+  itemTypeId: Tier2Mle
   rewardsToGive:
   - {fileID: 11400000, guid: 58e7cbab43553a54588114d5a30128e5, type: 2}

@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Money Point
   ItemSprite: {fileID: 21300000, guid: 2b879a586f9dbd842b14371b75d658b0, type: 3}
-  RewardType: 9
+  rewardTypeId: MoneyPoint
   baseValue: 1

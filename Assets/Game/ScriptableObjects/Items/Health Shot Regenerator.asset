@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Health Shot Regenerator
   ItemSprite: {fileID: 21300000, guid: 5c454132b23561242a718ca3cabc07c1, type: 3}
-  itemType: 8
+  itemTypeId: HealthShotRegenerator
   rewardsToGive:
   - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}

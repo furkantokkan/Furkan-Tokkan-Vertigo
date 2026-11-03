@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Tier3 Sniper
   ItemSprite: {fileID: 21300000, guid: 128192641d990b641a7cb5ba1d0f56ae, type: 3}
-  itemType: 15
+  itemTypeId: Tier3Sniper
   rewardsToGive:
   - {fileID: 11400000, guid: 62ab84365413d9f41bb21dfeb3e7d83a, type: 2}

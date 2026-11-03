@@ -37,7 +37,7 @@ namespace Game.Editor
                                     (x) =>
                                     {
                                         reward.itemName = reward.name;
-                                        reward.RewardType = (RewardType)x[0];
+                                        reward.rewardTypeId = EnumGenerator.GetExistingElements(EditorConst.REWARD_TYPE_NAME, EditorConst.REWARD_TYPE_PATH)[x[0]];
 
                                         EditorUtility.SetDirty(reward);
                                         AssetDatabase.SaveAssets();

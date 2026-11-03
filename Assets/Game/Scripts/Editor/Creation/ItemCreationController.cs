@@ -33,7 +33,7 @@ namespace Game.Editor
                                 (x) =>
                                 {
                                     bombItem.itemName = bombItem.name;
-                                    bombItem.itemType = (ItemType)x[0];
+                                    bombItem.itemTypeId = EnumGenerator.GetExistingElements(EditorConst.ITEM_TYPE_NAME, EditorConst.ITEM_TYPE_PATH)[x[0]];
 
                                     EditorUtility.SetDirty(bombItem);
                                     AssetDatabase.SaveAssets();
@@ -63,7 +63,7 @@ namespace Game.Editor
                                 (x) =>
                                 {
                                     wheelItem.itemName = wheelItem.name;
-                                    wheelItem.itemType = (ItemType)x[0];
+                                    wheelItem.itemTypeId = EnumGenerator.GetExistingElements(EditorConst.ITEM_TYPE_NAME, EditorConst.ITEM_TYPE_PATH)[x[0]];
 
                                     EditorUtility.SetDirty(wheelItem);
                                     AssetDatabase.SaveAssets();

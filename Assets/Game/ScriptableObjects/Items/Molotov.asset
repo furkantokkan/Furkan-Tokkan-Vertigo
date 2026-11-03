@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Molotov
   ItemSprite: {fileID: 21300000, guid: c7efa5f9149857641925848fec93602b, type: 3}
-  itemType: 9
+  itemTypeId: Molotov
   rewardsToGive:
   - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}

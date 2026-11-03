@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Rifle Points
   ItemSprite: {fileID: 21300000, guid: 06c5d345a0eff944880d4dcdc1ed98e6, type: 3}
-  RewardType: 3
+  rewardTypeId: RiflePoints
   baseValue: 1

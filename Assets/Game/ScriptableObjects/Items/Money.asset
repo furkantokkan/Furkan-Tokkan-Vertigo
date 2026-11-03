@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Money
   ItemSprite: {fileID: 21300000, guid: 2b879a586f9dbd842b14371b75d658b0, type: 3}
-  itemType: 16
+  itemTypeId: Money
   rewardsToGive:
   - {fileID: 11400000, guid: 7d851497a0f63e546b05d08af5bdb785, type: 2}

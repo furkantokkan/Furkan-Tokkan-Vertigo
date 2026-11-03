@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Grenade M26
   ItemSprite: {fileID: 21300000, guid: 194af2437abd92048b520e0af09e1d78, type: 3}
-  itemType: 5
+  itemTypeId: GrenadeM26
   rewardsToGive:
   - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}

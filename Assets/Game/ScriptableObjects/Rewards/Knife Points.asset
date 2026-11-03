@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Knife Points
   ItemSprite: {fileID: 21300000, guid: 1fe3c3f74af90414db94c92485d01cff, type: 3}
-  RewardType: 1
+  rewardTypeId: KnifePoints
   baseValue: 1

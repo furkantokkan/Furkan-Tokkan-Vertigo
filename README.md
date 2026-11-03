@@ -47,8 +47,8 @@ The wheel reads its data from `Assets/Game/Resources/WheelSettings.asset`, which
 | --- | --- |
 | Boxes | Create a box, add any number of waves (`BoxContent`), remove waves or whole boxes. **Randomize All Contents** fills every wave from the item list with per-wave-type value ranges; **Equalize All Weights** spreads the probability evenly. |
 | Waves | Each wave is a list of wheel slots. Add, remove or drag slots to change how many the wheel shows. Every slot has an item, a weight and a whole-number amount for each of the item's rewards. |
-| Items | Create wheel items or a bomb. The `ItemType` enum is regenerated automatically. |
-| Rewards | Create rewards through a type picker. The `RewardType` enum is regenerated automatically. |
+| Items | Create wheel items or a bomb. The `ItemType` enum is regenerated automatically, and the item stores its type as the enum name (picked from a dropdown). |
+| Rewards | Create rewards through a type picker. The `RewardType` enum is regenerated automatically, and the reward stores its type as the enum name. |
 | Validation | An Odin validator keeps each asset's file name equal to its item name and offers a one-click fix. |
 
 | Box | Wave | Item |
@@ -130,7 +130,7 @@ MessageBroker.Default.Receive<GameOverMessage>()
 | `GameOverMessage` | `PopupController` (give up), `RewardPanelController` (exit) | `WheelManager`, `TopProgressBarController`, `RewardPanelController`, `MoneyShowController` |
 | `PlayerRevivedMessage` | `PopupController` | no subscriber yet |
 
-**Server-ready enums.** Enums leave the client by name, never by number: send `WaveType.Super.ToString()` (`"Super"`) and read it back with `Enum.TryParse`. Unity's `JsonUtility` writes enums as integers, so a request or response DTO should hold the name in a `string` field. The generated `ItemType` and `RewardType` enums only ever get new entries at the end, so their names are stable IDs.
+**Server-ready enums.** Enums leave the client by name, never by number: send `WaveType.Super.ToString()` (`"Super"`) and read it back with `Enum.TryParse`. Items and rewards already store their type this way (`itemTypeId: Bomb`, `rewardTypeId: GoldPoint`), and code reads it through the typed `ItemType` and `RewardType` properties. Unity's `JsonUtility` writes enum fields as integers, so a request or response DTO should hold the name in a `string` field.
 
 ### Project layout
 
@@ -158,7 +158,7 @@ The case was submitted on **16 January 2025** (the `Final APK` commit). The APK 
 | --- | --- |
 | 2025-01-20 | Wheel refactor: pooled `WheelObject` slot views |
 | 2025-01-28 – 30 | Editor framework refactor, new icons, `WheelSettings` cleanup |
-| 2026-11-03 | Typed events, integer reward amounts, variable slot count (details below) |
+| 2026-11-03 | Typed events, integer reward amounts, variable slot count, string type IDs (details below) |
 
 **2026-11-03 update**
 
@@ -166,3 +166,4 @@ The case was submitted on **16 January 2025** (the `Final APK` commit). The APK 
 - **Simpler reward amounts.** `WheelSlot` used to keep values as `object` in a dictionary, serialize them as JSON strings and convert them with a generic `GetValue<T>`. It now stores a list of rewards with an `int` amount. The old strings were culture-formatted (`"17,57432"`), so the same asset could parse to a different number on a device with another locale.
 - **Variable slot count.** `BoxContentItems` holds a `WheelSlot[]` instead of `slot1` … `slot8`, and the wheel lays itself out for any count. Spins target the slot index, so two slots with the same item can no longer stop on the wrong one.
 - **Data migration.** All 70 existing waves (560 slots) were converted. Amounts were rounded to the whole numbers the wheel already displayed.
+- **String type IDs.** Item and reward assets store their `ItemType` / `RewardType` as the enum name (`"Bomb"`) instead of its number, so a server can use the same ID, and adding or reordering enum entries can no longer change what an asset means. All 19 items and 11 rewards were converted.

@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Submachine Points
   ItemSprite: {fileID: 21300000, guid: 832839d6eacd8b343b02380ea7cbfe94, type: 3}
-  RewardType: 7
+  rewardTypeId: SubmachinePoints
   baseValue: 1

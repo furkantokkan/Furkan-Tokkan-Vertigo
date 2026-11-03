@@ -121,7 +121,7 @@ namespace Game.UI.Wheel
 
         private void SendReward(WheelSlot wheelSlot)
         {
-            if (wheelSlot.item.itemType == ItemType.Bomb)
+            if (wheelSlot.item.ItemType == ItemType.Bomb)
             {
                 MessageBroker.Default.Publish(new BombGivenMessage(wheelSlot.item, currentWave));
             }

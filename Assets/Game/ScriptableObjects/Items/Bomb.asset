@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Bomb
   ItemSprite: {fileID: 21300000, guid: a62523c6c5c087e479f9c035100307ca, type: 3}
-  itemType: 18
+  itemTypeId: Bomb
   rewardsToGive: []

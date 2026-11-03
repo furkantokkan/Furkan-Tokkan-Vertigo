@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Vest Points
   ItemSprite: {fileID: 21300000, guid: 0211dd19db6674848b9698a5f13da132, type: 3}
-  RewardType: 8
+  rewardTypeId: VestPoints
   baseValue: 1

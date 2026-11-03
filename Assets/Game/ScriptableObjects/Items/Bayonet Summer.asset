@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Bayonet Summer
   ItemSprite: {fileID: 21300000, guid: f25ca14cc68e633478377f6ec17c61ad, type: 3}
-  itemType: 4
+  itemTypeId: BayonetSummer
   rewardsToGive:
   - {fileID: 11400000, guid: d76c72030ea8d2649b1e66737fcc7387, type: 2}

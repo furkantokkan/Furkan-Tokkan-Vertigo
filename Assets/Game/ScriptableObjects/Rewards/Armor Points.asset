@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Armor Points
   ItemSprite: {fileID: 21300000, guid: a51cd7c88e6632644931d5a452824d00, type: 3}
-  RewardType: 0
+  rewardTypeId: ArmorPoints
   baseValue: 1

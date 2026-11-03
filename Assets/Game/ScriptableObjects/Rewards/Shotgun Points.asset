@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Shotgun Points
   ItemSprite: {fileID: 21300000, guid: 0ac949bcf575d674bb517b4757aea375, type: 3}
-  RewardType: 4
+  rewardTypeId: ShotgunPoints
   baseValue: 1

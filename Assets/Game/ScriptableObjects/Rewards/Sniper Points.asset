@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Sniper Points
   ItemSprite: {fileID: 21300000, guid: b6abea27ac97d2c48a253466d780f710, type: 3}
-  RewardType: 6
+  rewardTypeId: SniperPoints
   baseValue: 1

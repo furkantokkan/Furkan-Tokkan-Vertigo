@@ -23,5 +23,5 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Gold Point
   ItemSprite: {fileID: 21300000, guid: b39e07616f069594b8df472755914361, type: 3}
-  RewardType: 10
+  rewardTypeId: GoldPoint
   baseValue: 1

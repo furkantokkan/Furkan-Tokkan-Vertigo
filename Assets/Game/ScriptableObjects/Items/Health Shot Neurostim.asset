@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ItemName: Health Shot Neurostim
   ItemSprite: {fileID: 21300000, guid: e1fa50f9f3e00ad4fba60ec875bbd6af, type: 3}
-  itemType: 7
+  itemTypeId: HealthShotNeurostim
   rewardsToGive:
   - {fileID: 11400000, guid: 562cc4e5b12e1d14ebe2909131c1e4ee, type: 2}
